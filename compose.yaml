@@ -7,7 +7,7 @@ services:
     command: hugo
 
   server:
-    image: node:14
+    image: node:latest
     restart: unless-stopped
     volumes:
       - ./backend:/app
