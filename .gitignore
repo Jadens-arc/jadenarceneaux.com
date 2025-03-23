@@ -1,5 +1,5 @@
 */public/*
 */node_modules/*
 .vscode
-.env
+backend/.env
 .DS_Store%
