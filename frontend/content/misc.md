@@ -35,7 +35,7 @@ draft = false
 - Theme forked from [Archie](https://github.com/athul/archie)
 - Hosted on a KnownHost VPS
 - Assets stored in AWS S3
-- All code on [GitHub](https://github.com/jadens-arc/jadens-arc.github.io)
+- All code on [GitHub](https://github.com/jadens-arc/jadenarceneaux.com)
 
 Much love ❤️
 
