@@ -2,7 +2,7 @@ services:
   hugo:
     image: hugomods/hugo
     volumes:
-      - hugo_public:/src/public # Share compiled files
+      - hugo_public:/src/public
       - ./frontend:/src
     command: hugo
 
@@ -28,7 +28,7 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
       - caddy_config:/config
-      - hugo_public:/public # Serve Hugo output
+      - hugo_public:/public
     networks:
       - web_network
 
