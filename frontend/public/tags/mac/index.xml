@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Jaden Arceneaux</title>
+    <link>https://jadenarceneaux.com/tags/mac/</link>
+    <description>Recent content in Mac on Jaden Arceneaux</description>
+    <generator>Hugo 0.145.0</generator>
+    <language>en-us</language>
+    <copyright>© Jaden Arceneaux</copyright>
+    <lastBuildDate>Sun, 03 Mar 2024 21:13:02 -0800</lastBuildDate>
+    <atom:link href="https://jadenarceneaux.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kitty</title>
+      <link>https://jadenarceneaux.com/posts/kitty/</link>
+      <pubDate>Sun, 03 Mar 2024 21:13:02 -0800</pubDate>
+      <guid>https://jadenarceneaux.com/posts/kitty/</guid>
+      <description>&lt;p&gt;While on a quest to have the best Neovim setup possible, I hit a roadblock.&lt;/p&gt;&#xA;&lt;p&gt;For those of you who don&amp;rsquo;t know, I have a 2020 M1 MacBook Air. For as long as I&amp;rsquo;ve had a Mac, I&amp;rsquo;ve been using the default terminal application. It&amp;rsquo;s not the best, but it&amp;rsquo;s cute enough, and it does most of what I need it to do. But it has one fatal flaw. It doesn&amp;rsquo;t support true colors. Which means it doesn&amp;rsquo;t work with the majority of Neovim themes.&lt;/p&gt;&#xA;&lt;p&gt;Initially, I tried to ignore it and just go with one of the few themes that supported the default terminal. But the allure of a truly beautiful Neovim setup was too strong, so I gave in.&lt;/p&gt;&#xA;&lt;p&gt;Trying out &lt;a href=&#34;https://sw.kovidgoyal.net/kitty/&#34;&gt;Kitty&lt;/a&gt; initially was underwhelming. Just felt like any other terminal. Things really opened up to me the moment I hit &lt;code&gt;command + ,&lt;/code&gt; to see the settings. I was greeted by pages of configs launched in Vim instead of a dedicated GUI. Upon reading the documentation, I was even more surprised.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The window management is lovely and truly a strong competitor with Tmux.&lt;/li&gt;&#xA;&lt;li&gt;The CLI, kitten,  that comes with Kitty is extremely helpful&#xA;Built-in support for downloading, previewing, and installing themes is so handy&lt;/li&gt;&#xA;&lt;li&gt;The fact that I can easily change the app icon to something other than the ugly default one is amazing&lt;/li&gt;&#xA;&lt;li&gt;and I can match my terminal theme to Neovim theme :D&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/catppuccin/catppuccin&#34;&gt;catppuccin&lt;/a&gt; on top!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I did encounter one issue with it not working correctly with NCurses. I&amp;rsquo;m not sure what exactly caused this. The application I was trying to use was an application I wrote so it very well could be my fault. But it was easily resolved by modifying the &lt;code&gt;kitty.config&lt;/code&gt; and setting &lt;code&gt;term xterm-256color&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Currently, I&amp;rsquo;m using Neovim inside Kitty to write this blog post and I have to say it&amp;rsquo;s very smooth, very responsive, and overall just looks beautiful.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://s3.us-west-1.amazonaws.com/jadenarceneaux.com/neovim.webp&#34; alt=&#34;Image of my setup&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The ability to natively split windows is so handy for having an editor window open and my server logs and other notes off to the side.&lt;/p&gt;&#xA;&lt;p&gt;Overall, I&amp;rsquo;m impressed. If you&amp;rsquo;re a Mac user who regularly uses the terminal, I&amp;rsquo;d highly recommend giving Kitty a try.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Yes I know a lot of this is &amp;ldquo;rice&amp;rdquo; but it&amp;rsquo;s nice and it brings me joy&lt;/p&gt;&lt;/blockquote&gt;&#xA;</description>
+    </item>
+  </channel>
+</rss>

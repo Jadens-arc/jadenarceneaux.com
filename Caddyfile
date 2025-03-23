@@ -1,4 +1,8 @@
-jadenarceneaux.com
+jadenarceneaux.local {
+    root /public
+    file_server
+}
 
-root /public
-file_server
+api.jadenarceneaux.local {
+    reverse_proxy server:3000
+}

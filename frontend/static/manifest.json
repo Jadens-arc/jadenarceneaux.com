@@ -1,0 +1,17 @@
+{
+  "name": "Jaden Arceneaux",
+  "short_name": "Jaden Arceneaux",
+  "description": "Software developer based in Las Vegas, Nevada",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "444x444",
+      "type": "image/png"
+    }
+  ]
+}
+

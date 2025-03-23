@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head lang="en">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Change Log #2 - Jaden Arceneaux</title><link rel="manifest" href="/manifest.json">
+	<meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1>
+	<meta name="theme-color" content="white"> 
+	<meta name="description" content="The biggest update yet.
+TL;DR
+
+Switched hosting from GitHub Pages to KnownHost VPS
+Switch from Google Analytics to Cloudflare Analytics
+New API for handling contact form submissions
+
+Captcha and rate limiter for preventing bots and spam
+
+
+
+First of all, I&rsquo;ve made a massive change in hosting providers for this website. Previously it was hosted using GitHub pages. A free service offered by GitHub to host static sites. I used a GitHub action to compile my Hugo project into HTML on every push. Handling form submissions was a little awkward, I had to use a third-party form handling API, Formspree. It also made it awkward to debug issues." />
+	<meta property="og:image" content="/icon.png"/>
+	<meta property="twitter:image" content="https://jadenarceneaux.com/icon.png"/>
+	<link rel="apple-touch-icon" href="/icon.png" />
+	
+    <script
+      defer
+      src='https://static.cloudflareinsights.com/beacon.min.js'
+      data-cf-beacon='{"token": "d7ae34ce785d42da8f440de1ae74c284"}'>
+    </script>
+    <meta property="og:url" content="https://jadenarceneaux.com/posts/change-log-2/">
+  <meta property="og:site_name" content="Jaden Arceneaux">
+  <meta property="og:title" content="Change Log #2">
+  <meta property="og:description" content="The biggest update yet.
+TL;DR
+Switched hosting from GitHub Pages to KnownHost VPS Switch from Google Analytics to Cloudflare Analytics New API for handling contact form submissions Captcha and rate limiter for preventing bots and spam First of all, I’ve made a massive change in hosting providers for this website. Previously it was hosted using GitHub pages. A free service offered by GitHub to host static sites. I used a GitHub action to compile my Hugo project into HTML on every push. Handling form submissions was a little awkward, I had to use a third-party form handling API, Formspree. It also made it awkward to debug issues.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-26T12:21:39-08:00">
+    <meta property="article:modified_time" content="2025-02-26T12:21:39-08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Change Log #2">
+  <meta name="twitter:description" content="The biggest update yet.
+TL;DR
+Switched hosting from GitHub Pages to KnownHost VPS Switch from Google Analytics to Cloudflare Analytics New API for handling contact form submissions Captcha and rate limiter for preventing bots and spam First of all, I’ve made a massive change in hosting providers for this website. Previously it was hosted using GitHub pages. A free service offered by GitHub to host static sites. I used a GitHub action to compile my Hugo project into HTML on every push. Handling form submissions was a little awkward, I had to use a third-party form handling API, Formspree. It also made it awkward to debug issues.">
+<script src="https://jadenarceneaux.com/js/feather.min.js"></script>
+	
+	
+        <link href="https://jadenarceneaux.com/css/fonts.578d3e2d005e734a2cf9d37581bc1c607d869f50beb8ee34d2078d5b58309cd3.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://jadenarceneaux.com/css/main.04073e0f7ca8d69d57879b1c3c95b7d5a8fc09f567b27f494923b15e861bf658.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://jadenarceneaux.com/css/dark.2e8854c30cf1d0ca2c110c3073d251d534394e9d13b98bcda52884d771bc4016.css"  disabled />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://jadenarceneaux.com/">Jaden Arceneaux</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/projects">Projects</a>
+		
+		<a href="/posts">Blog</a>
+		
+		<a href="/contact">Contact</a>
+		
+		<a href="/misc">Misc</a>
+		
+		| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+		<script src="https://jadenarceneaux.com/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			
+				<h1 class="title">Change Log #2</h1>
+			
+			
+				<div class="meta">Posted on Feb 26, 2025</div>
+			
+		</div>
+		
+
+		<section class="body">
+			<p>The biggest update yet.</p>
+<p>TL;DR</p>
+<ul>
+<li>Switched hosting from GitHub Pages to KnownHost VPS</li>
+<li>Switch from Google Analytics to Cloudflare Analytics</li>
+<li>New API for handling contact form submissions
+<ul>
+<li>Captcha and rate limiter for preventing bots and spam</li>
+</ul>
+</li>
+</ul>
+<p>First of all, I&rsquo;ve made a massive change in hosting providers for this website. Previously it was hosted using GitHub pages. A free service offered by GitHub to host static sites. I used a GitHub action to compile my Hugo project into HTML on every push. Handling form submissions was a little awkward, I had to use a third-party form handling API, Formspree. It also made it awkward to debug issues.</p>
+<p>I finally moved to manually hosting everything. I got a cheap VPS from Knownhost and set up NGINX to serve my static files. Then, I reconfigured my domain&rsquo;s DNS setting to point to my new server. Then it was just using Certbot to generate some SSL certificates to enable HTTPS. Migrating the front end of my website was honestly a piece of cake.</p>
+<p>What was really powerful was everything I was able to do on top of that. Or more accurately, what I was able to do under the hood with the backend. The first order of business was handling my own form submission. For that, I created <a href="https://api.jadenarceneaux.com">api.jadenarceneaux.com</a>. A simple Express.js server running through NGINX. Currently, it only has one route <code>/forms/contact</code> to handle submissions on my contact form.</p>
+<p>Initially, it just validated the data on the form and then connected to the Gmail SMTP server with my Gmail login to email the form contents to me. This was bad for a few reasons.</p>
+<p>The first and most immediately apparent one was bot entries. Within like 30 seconds of deploying this I had bots filling out the form and sending junk to my email. The obvious solution, use a Captcha. First I experimented with Google Recaptcha but it honestly seemed like a privacy nightmare for my users so I ended up opting for Cloudflare Turnstile. I also implemented a rate limiter so people can&rsquo;t spam my email.</p>
+<p>The second and arguably worse problem was the fact that for this setup to work I had to have my Gmail credentials on the server. For small blogs like this, it&rsquo;s not a question of if, but when this server will get hacked. At some point, I&rsquo;m going to forget this website exists entirely and stop updating it. At that point, it&rsquo;ll become the local Russian playground. So not having my Gmail credentials on the server is a big deal to me lmao. I ended up opting to use a Mailgun mail server to send automated emails. This just involved adding a couple of TXT records to the DNS settings for my domain name and setting up a user on the email server. One cool feature of Mailgun is the ability to limit an email address to only send to one receiver. Currently, the only email address on the whitelist is my own. This means that even if someone steals my STMP credentials they can&rsquo;t send emails to random people from my email address. How lovely.</p>
+<p>While I was looking into Cloudflare Turnstile I discovered their web analytics. Previously, I had been using Google Analytics but knowing how awful Google is with data privacy I decided to switch to Cloudflare Analytics as well.</p>
+<p>I finally feel like my website is in the exact place I want it to be. Everything is under my control. I&rsquo;ve thought about making a Docker container for both the website and the API. That&rsquo;d make it easier to spin up another instance of my website if something ever happens to my VPS. Unfortunately that&rsquo;d also add overhead to actually running the servers themselves. I&rsquo;m using the cheapest plan from my hosting provider which is 1 CPU core and 1GB of RAM. I don&rsquo;t exactly have an abundance of processing power to spare. That&rsquo;s also the reason I don&rsquo;t have any kind of MySQL database running to store form submissions.</p>
+<p>Both the <a href="https://github.com/Jadens-arc/jadens-arc.github.io">website</a> and the <a href="https://github.com/Jadens-arc/api.jadenarceneaux.com">API</a> are open-sourced and can be found on <a href="https://github.com/Jadens-arc">my GitHub</a>. Feel free to check the code out or even use it in your own projects. Thanks for reading. I love you &lt;3</p>
+<p><strong>Tiny Changes</strong></p>
+<ul>
+<li>Color matched scrollbar on FireFox</li>
+<li>Fixed links to public key</li>
+<li>Refactored codebase for newest Hugo version</li>
+</ul>
+<blockquote>
+<p>All this work just for it to look the exact same to the end user</p></blockquote>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center">
+        <div
+            style="
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                justify-content: center;
+                margin-bottom: 1rem;
+            "
+        ><a
+                class="soc"
+                href="https://github.com/jadens-arc"
+                rel="me"
+                title="GitHub"
+                ><i data-feather="github"></i
+            ></a>
+            <span class="border"></span><a
+                class="soc"
+                href="https://www.instagram.com/jaden.svg/"
+                rel="me"
+                title="Instagram"
+                ><i data-feather="instagram"></i
+            ></a>
+            <span class="border"></span><a
+                class="soc"
+                href="https://www.linkedin.com/in/jaden-arceneaux/"
+                rel="me"
+                title="LinkedIn"
+                ><i data-feather="linkedin"></i
+            ></a>
+            <span class="border"></span><a
+                class="soc"
+                href="https://www.twitter.com/jadenarceneaux/"
+                rel="me"
+                title="Twitter"
+                ><i data-feather="twitter"></i
+            ></a>
+            <span class="border"></span><a
+                class="soc"
+                href="/index.xml"
+                rel="me"
+                title="RSS"
+                ><i data-feather="rss"></i
+            ></a>
+            <span class="border"></span><a
+                class="soc"
+                href="mailto:contact@jadenarceneaux.com"
+                rel="me"
+                title="Email"
+                ><i data-feather="mail"></i
+            ></a>
+            <span class="border"></span></div>
+        <wbr />
+        <div
+            class="footer-info"
+            style="
+                word-wrap: nowrap;
+                display: flex;
+                flex-wrap: wrap;
+                width: fit-content;
+                text-align: center;
+                margin-bottom: 1rem;
+            "
+        >
+            2025  © Jaden Arceneaux 
+        </div>
+    </div><script>
+        feather.replace();
+    </script></footer>
+</div>
+    </body>
+</html>

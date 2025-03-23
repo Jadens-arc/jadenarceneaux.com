@@ -2,9 +2,20 @@ services:
   hugo:
     image: hugomods/hugo
     volumes:
-      - ./public:/src/public
-      - .:/src
+      - hugo_public:/src/public # Share compiled files
+      - ./frontend:/src
     command: hugo
+
+  server:
+    image: node:14
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app
+    working_dir: /app
+    command: /bin/sh -c "npm install && npm run start"
+    networks:
+      - web_network
+
   caddy:
     image: caddy:latest
     restart: unless-stopped
@@ -15,4 +26,17 @@ services:
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./public:/public
+      - caddy_data:/data
+      - caddy_config:/config
+      - hugo_public:/public # Serve Hugo output
+    networks:
+      - web_network
+
+networks:
+  web_network:
+    driver: bridge
+
+volumes:
+  caddy_data:
+  caddy_config:
+  hugo_public:
