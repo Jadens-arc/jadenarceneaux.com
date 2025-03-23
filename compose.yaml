@@ -13,6 +13,7 @@ services:
       - ./backend:/app
     working_dir: /app
     command: /bin/sh -c "npm install && npm run start"
+    env_file: .env
     networks:
       - web_network
 
@@ -21,6 +22,7 @@ services:
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
+    env_file: .env
     ports:
       - "80:80"
       - "443:443"

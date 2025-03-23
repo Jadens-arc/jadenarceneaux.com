@@ -1,8 +1,8 @@
-jadenarceneaux.com {
+{$SITE_ADDRESS} {
     root /public
     file_server
 }
 
-api.jadenarceneaux.com {
+{$API_ADDRESS} {
     reverse_proxy server:3000
 }
