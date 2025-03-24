@@ -9,7 +9,7 @@
 
 <form
     id="contact-form"
-    action="https://api.jadenarceneaux.com/forms/contact"
+    action='https://{{ getenv "API_ADDRESS" }}/forms/contact'
     method="POST"
 >
     <label for="name"> Name: </label>

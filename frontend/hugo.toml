@@ -8,6 +8,10 @@ pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^API_ADDRESS$']
+
 [params]
 og_image = "/icon.png"
 subtitle = "Software Developer and occacional writer"

@@ -4,6 +4,7 @@ services:
     volumes:
       - hugo_public:/src/public
       - ./frontend:/src
+    env_file: .env
     command: hugo
 
   server:
