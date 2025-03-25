@@ -12,6 +12,7 @@ const limiter = rateLimit({
 const app = express();
 const port = 3000;
 
+app.set("trust proxy", 1);
 app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded form data
 app.use(limiter);
 
