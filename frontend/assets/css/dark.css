@@ -198,3 +198,9 @@ a:hover {
   background: royalblue;
   color: whitesmoke ;
 }
+
+.alert {
+  background-color: var(--darkMaincolor);
+  color: #202124;
+  padding: 0px 10px
+}
