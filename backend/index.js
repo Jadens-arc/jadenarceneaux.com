@@ -22,10 +22,12 @@ app.get("/", (req, res) => {
 });
 
 app.post("/forms/contact", (req, res) => {
+  console.log(`New message received from ${req.ip} at ${new Date()}`);
   console.log(req.body);
   const token = req.body["cf-turnstile-response"];
 
   if (!token) {
+    console.log("No token provided");
     return res
       .status(400)
       .send(
