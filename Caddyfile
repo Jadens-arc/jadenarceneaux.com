@@ -2,8 +2,16 @@
     root /public
     file_server
     header X-Powered-By "DedSec: Join Us"
+    log {
+        output file /var/log/caddy/access.log
+        format json
+    }
 }
 
 {$API_ADDRESS} {
     reverse_proxy server:3000
+    log {
+        output file /var/log/caddy/api.access.log
+        format json
+    }
 }
