@@ -22,12 +22,15 @@ in beautiful Las Vegas, Nevada🌵
 
 ## Overview
 
-Programming has been my passion for a big part of my
-life. I taught myself my first programming language at 13 and
-instantly became hooked. I've been a full stack developer for over 2 years now.
+Experienced Full Stack Developer specializing in scalable applications, automation, and business process optimization (ERP, CRM, etc). Proven track record of leading high-impact projects and improving operational efficiency.
 
+Personally, programming has been my passion for a big part of my
+life. I taught myself my first programming language at 13 and
+instantly became hooked.
 
 Feel free to check out some of my projects or read my blog, and thanks
 for being here at all :)
 
-Don't hesitate to reach me @ contact@jadenarceneaux.com and feel free to encrypt your emails using my public key listed above
+Don't hesitate to reach me @ contact@jadenarceneaux.com and feel free to encrypt your emails using my public key listed above.
+
+Also, this whole website is open-sourced, and honestly, it's one of my favorite projects. You can check out the code [here](https://github.com/jadens-arc/jadenarceneaux.com).
