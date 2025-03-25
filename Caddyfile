@@ -4,7 +4,7 @@
     header X-Powered-By "DedSec: Join Us"
     log {
         output file /var/log/caddy/access.log
-        format json
+        format console
     }
 }
 
@@ -12,6 +12,6 @@
     reverse_proxy server:3000
     log {
         output file /var/log/caddy/api.access.log
-        format json
+        format console
     }
 }
