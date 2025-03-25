@@ -1,6 +1,7 @@
 {$SITE_ADDRESS} {
     root /public
     file_server
+    header X-Powered-By "DedSec: Join Us"
 }
 
 {$API_ADDRESS} {
