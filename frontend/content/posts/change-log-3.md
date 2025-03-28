@@ -8,7 +8,7 @@ readTime=2
 
 Major code restructure lmao.
 
-Soooo recently I decided to containerize this site with Docker. jadenarceneaux.com, api.jadenarceneaux.com, and my reverse proxy are now all stored in a single mono repository. This makes it so much easier to deploy new instances of my website. All I have to do is clone the repo, create the .env file based on the .env.example file, and run docker compose up -d to bring it up.
+Soooo recently I decided to containerize this site with Docker. [jadenarceneaux.com](https://jadenarceneaux.com), [api.jadenarceneaux.com](https://api.jadenarceneaux.com), and my reverse proxy are now all stored in a single mono repository. This makes it so much easier to deploy new instances of my website. All I have to do is clone the repo, create the `.env` file based on the `.env.example` file, and run `docker compose up -d` to bring it up.
 
 Also, a change worth noting is my switch from Nginx to Caddy for reverse proxy and file hosting. Honestly, I really liked Nginx but trying to get SSL cert generation to work was a huge pain. Certbot has its own Docker Image, and Nginx does too. The issue I'd run into is that Nginx would consume ports 80 and 443. Certbot would try to host some files for their Certificate Authority to verify my website and it couldn't because those ports were already in use. I'm sure there's a workaround, but I switched to Caddy because in addition to hosting my static file and acting as a reverse proxy for my web server, it also automatically handles SSL cert generation. It is literally the best thing ever.
 
