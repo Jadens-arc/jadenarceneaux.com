@@ -33,4 +33,4 @@ for being here at all :)
 
 Don't hesitate to reach me @ contact@jadenarceneaux.com and feel free to encrypt your emails using my public key listed above.
 
-Also, this whole website is open-sourced, and honestly, it's one of my favorite projects. You can check out the code [here](https://github.com/jadens-arc/jadenarceneaux.com).
+Also, this whole website is open-sourced, and honestly, it's one of my favorite projects. You can [check out the code](https://github.com/jadens-arc/jadenarceneaux.com).
