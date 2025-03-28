@@ -1,156 +1,175 @@
 <style type="text/css" media="screen">
-  #pride-month-text {
-    background: linear-gradient(
-      45deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet,
-      red
-    );
-    background-clip: text;
-    color: transparent;
-    width: fit-content;
-  }
+    #pride-month-text {
+        background: linear-gradient(
+            45deg,
+            red,
+            orange,
+            yellow,
+            green,
+            blue,
+            indigo,
+            violet,
+            red
+        );
+        background-clip: text;
+        color: transparent;
+        width: fit-content;
+    }
 
-  #pride-month-text:after {
-    content: "🎃";
-    background-clip: text;
-    filter: saturate(0);
-    color: #000000bb;
-    width: fit-content;
-  }
+    #pride-month-text:after {
+        content: "🎃";
+        background-clip: text;
+        filter: saturate(0);
+        color: #000000bb;
+        width: fit-content;
+    }
 </style>
 
 <p style="display: none" id="pride-month">
-  <span
-    style="
-      background: linear-gradient(
-        45deg,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet,
-        red
-      );
-      background-clip: text;
-      color: transparent;
-      width: fit-content;
-    "
-    id="pride-month-text"
-  >
-    Be who you are for your pride
-  </span>
-  🏳️‍🌈
+    <span
+        style="
+            background: linear-gradient(
+                45deg,
+                red,
+                orange,
+                yellow,
+                green,
+                blue,
+                indigo,
+                violet,
+                red
+            );
+            background-clip: text;
+            color: transparent;
+            width: fit-content;
+        "
+        id="pride-month-text"
+    >
+        Be who you are for your pride
+    </span>
+    🏳️‍🌈
 </p>
 
 <p style="display: none" id="pride-month-vegas">
-  <span style="" id="pride-month-text"> Be who you are for your pride </span>
-  <small style="display: block"
-    >Fun Fact: Although Pride Month is officially celebrated in June, due to the
-    extreme heat, Las Vegas does all it's pride celebrations in October,
-    including the parade. Shout out my homosexual audience.</small
-  >
+    <span style="" id="pride-month-text"> Be who you are for your pride </span>
+    <small style="display: block"
+        >Fun Fact: Although Pride Month is officially celebrated in June, due to
+        the extreme heat, Las Vegas does all it's pride celebrations in October,
+        including the parade. Shout out my homosexual audience.</small
+    >
 </p>
 
 <p style="display: none" id="jaden-day">
-  <span
-    style="
-      background: radial-gradient(
-          ellipse farthest-corner at right bottom,
-          #fedb37 0%,
-          #fdb931 8%,
-          #9f7928 30%,
-          #8a6e2f 40%,
-          transparent 80%
-        ),
-        radial-gradient(
-          ellipse farthest-corner at left top,
-          #ffffff 0%,
-          #ffffac 8%,
-          #d1b464 25%,
-          #5d4a1f 62.5%,
-          #5d4a1f 100%
-        );
-      background-clip: text;
-      color: transparent;
-      width: fit-content;
-    "
-    id="jaden-day-text"
-  >
-    Happy Jaden Day
-  </span>
+    <span
+        style="
+            background:
+                radial-gradient(
+                    ellipse farthest-corner at right bottom,
+                    #fedb37 0%,
+                    #fdb931 8%,
+                    #9f7928 30%,
+                    #8a6e2f 40%,
+                    transparent 80%
+                ),
+                radial-gradient(
+                    ellipse farthest-corner at left top,
+                    #ffffff 0%,
+                    #ffffac 8%,
+                    #d1b464 25%,
+                    #5d4a1f 62.5%,
+                    #5d4a1f 100%
+                );
+            background-clip: text;
+            color: transparent;
+            width: fit-content;
+        "
+        id="jaden-day-text"
+    >
+        Happy Jaden Day
+    </span>
 </p>
 
 <p style="display: none" id="black-history-month">
-  <span
-    style="
-      background: linear-gradient(45deg, #00853f, black, #e31b23);
-      filter: drop-shadow(0 0 2rem white);
-      background-clip: text;
-      color: transparent;
-      width: fit-content;
-    "
-    id="black-history-month-text"
-  >
-    Happy Black History Month
-  </span>
+    <span
+        style="
+            background: linear-gradient(45deg, #00853f, black, #e31b23);
+            filter: drop-shadow(0 0 2rem white);
+            background-clip: text;
+            color: transparent;
+            width: fit-content;
+        "
+        id="black-history-month-text"
+    >
+        Happy Black History Month
+    </span>
 </p>
 
 <p style="display: none" id="christmas">
-  <span
-    style="
-      background: linear-gradient(45deg, #00853f,  #e31b23);
-      background-clip: text;
-      color: transparent;
-      width: fit-content;
-    "
-    id="christmas-text"
-  >
-    Merry Christmas
-  </span>
-  ❄️⛄️
+    <span
+        style="
+            background: linear-gradient(45deg, #00853f, #e31b23);
+            background-clip: text;
+            color: transparent;
+            width: fit-content;
+        "
+        id="christmas-text"
+    >
+        Merry Christmas
+    </span>
+    ❄️⛄️
+</p>
+
+<p style="display: none" id="women">
+    <span
+        style="
+            background: linear-gradient(45deg, #783da8, #8841c4);
+            background-clip: text;
+            color: transparent;
+            width: fit-content;
+        "
+        id="women-text"
+    >
+        Happy Women's History Month
+    </span>
 </p>
 <script>
-  const pride_month          = document.getElementById("pride-month");
-  const pride_month_vegas    = document.getElementById("pride-month-vegas");
-  const jaden_day            = document.getElementById("jaden-day");
-  const black_history_month  = document.getElementById("black-history-month");
-  const christmas            = document.getElementById("christmas");
+    const pride_month = document.getElementById("pride-month");
+    const pride_month_vegas = document.getElementById("pride-month-vegas");
+    const jaden_day = document.getElementById("jaden-day");
+    const black_history_month = document.getElementById("black-history-month");
+    const christmas = document.getElementById("christmas");
+    const women = document.getElementById("women");
 
-  const cur_date = new Date();
+    const cur_date = new Date();
 
-  let day = cur_date.getDate();
-  let month = cur_date.getMonth() + 1;
+    let day = cur_date.getDate();
+    let month = cur_date.getMonth() + 1;
 
-  if (`${month}-${day}` == "11-2") {
-    jaden_day.style.display = "block";
-    document.body.style.backgroundImage =
-      "url(https://s3.us-west-1.amazonaws.com/jadenarceneaux.com/firework.gif)";
-    document.body.style.backgroundSize = "100vw 100vw";
-    document.body.style.backgroundAttachment = "fixed";
-  }
+    if (`${month}-${day}` == "11-2") {
+        jaden_day.style.display = "block";
+        document.body.style.backgroundImage =
+            "url(https://s3.us-west-1.amazonaws.com/jadenarceneaux.com/firework.gif)";
+        document.body.style.backgroundSize = "100vw 100vw";
+        document.body.style.backgroundAttachment = "fixed";
+    }
 
-  if (`${month}-${day}` == "12-25") {
-    christmas.style.display = "block";
-  }
+    if (`${month}-${day}` == "12-25") {
+        christmas.style.display = "block";
+    }
 
+    if (`${month}` == "2") {
+        black_history_month.style.display = "block";
+    }
 
-  if (`${month}` == "2") {
-    black_history_month.style.display = "block";
-  }
+    if (`${month}` == "3") {
+        women.style.display = "block";
+    }
 
-  if (`${month}` == "6") {
-    pride_month.style.display = "block";
-  }
+    if (`${month}` == "6") {
+        pride_month.style.display = "block";
+    }
 
-  if (`${month}` == "10") {
-    pride_month_vegas.style.display = "block";
-  }
+    if (`${month}` == "10") {
+        pride_month_vegas.style.display = "block";
+    }
 </script>
