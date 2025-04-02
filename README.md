@@ -1,4 +1,4 @@
-# [Jadenarceneaux.com](https://jadenarceneaux.com)
+# [jadenarceneaux.com](https://jadenarceneaux.com)
 My blog/personal website.
 
 ## Build Instructions
