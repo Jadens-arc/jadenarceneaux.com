@@ -2,23 +2,23 @@ baseURL = 'https://jadenarceneaux.com'
 languageCode = 'en-us'
 title = 'Jaden Arceneaux'
 copyright = "© Jaden Arceneaux"
-pagination.pagerSize = 8                           # articles per pag
+pagination.pagerSize = 8               # articles per pag
 # Code Highlight
 pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [security]
-  [security.funcs]
-    getenv = ['^HUGO_', '^CI$', '^API_ADDRESS$']
+[security.funcs]
+getenv = ['^HUGO_', '^CI$', '^API_ADDRESS$']
 
 [params]
 og_image = "/icon.png"
 subtitle = "Software Developer and occacional writer"
 description = "Software developer, occasional writer, and dedicated Neovim user based in beautiful Las Vegas, Nevada🌵"
 mode = "toggle"
-mathjax = true                                                # enable MathJax support
-katex = true                                                  # enable KaTeX support
+mathjax = true                                                                                                         # enable MathJax support
+katex = true                                                                                                           # enable KaTeX support
 enableRobotsTXT = true
 
 # Social Tags
@@ -37,11 +37,6 @@ url = "https://www.instagram.com/jaden.svg/"
 name = "LinkedIn"
 icon = "linkedin"
 url = "https://www.linkedin.com/in/jaden-arceneaux/"
-
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://www.twitter.com/jadenarceneaux/"
 
 [[params.social]]
 name = "RSS"
