@@ -22,12 +22,12 @@ My focus throughout my professional life has been enterprise resource planning (
     - Integrated with infrastructure to streamline setup for new clients and enforce suspensions for overdue accounts
   - Client Relationship Management System
     - Tracked interactions and communications with clients
-    - Optimize customer support-client interactions 
+    - Optimize customer support-client interactions
   - Refactored and rewrote thousands of lines of legacy code
 - **[Ironmind](https://github.com/jadens-arc/Ironmind)** - 2024
   - Esoteric Language interpreter and code execution visualizer.
   - Written in Rust and available on [crates.io](https://crates.io/crates/ironmind), [snap](https://snapcraft.io/ironmind), and [homebrew](https://github.com/Jadens-arc/Ironmind?tab=readme-ov-file#homebrew)
-  - Over **20,000 downloads** so far :D
+  - Over **30,000 downloads** so far :D
   - This started as a joke. It was just me wanting to dip my toes into the world of ownership-model memory management and Rust as a whole. I ended up making something that is pretty robust and something I'm proud of.
 - **[Juniel Enterprises](https://junielenterprises.com)**
   - Designed landing page
