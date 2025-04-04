@@ -24,6 +24,12 @@ My focus throughout my professional life has been enterprise resource planning (
     - Tracked interactions and communications with clients
     - Optimize customer support-client interactions
   - Refactored and rewrote thousands of lines of legacy code
+- **[My Blog [*this website*]](https://github.com/jadens-arc/jadenarceneaux.com)** - 2023 - present
+  - 400+ readers anually
+  - Static site generation with Hugo
+  - API written with Node.js and Express.js
+  - Deployed with Docker
+  - Dozens of captivating blog posts
 - **[Ironmind](https://github.com/jadens-arc/Ironmind)** - 2024
   - Esoteric Language interpreter and code execution visualizer.
   - Written in Rust and available on [crates.io](https://crates.io/crates/ironmind), [snap](https://snapcraft.io/ironmind), and [homebrew](https://github.com/Jadens-arc/Ironmind?tab=readme-ov-file#homebrew)
