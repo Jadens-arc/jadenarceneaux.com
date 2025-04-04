@@ -24,7 +24,7 @@ My focus throughout my professional life has been enterprise resource planning (
     - Tracked interactions and communications with clients
     - Optimize customer support-client interactions
   - Refactored and rewrote thousands of lines of legacy code
-- **[My Blog](https://github.com/jadens-arc/jadenarceneaux.com)** - 2023-present
+- **[jadenarceneaux.com](https://github.com/jadens-arc/jadenarceneaux.com)** - 2023-present
   - This very website lol
   - 400+ readers anually
   - Static site generation with Hugo
