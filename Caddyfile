@@ -8,7 +8,9 @@
         format console
     }
 
-    header /fonts*,/css*,/js* {
+    @staticAssets path /fonts* /css* /js*
+
+    header @staticAssets {
         Cache-Control "public, max-age=31536000, s-maxage=31536000"
         Access-Control-Allow-Origin "*"
         Access-Control-Allow-Methods "GET, OPTIONS"
