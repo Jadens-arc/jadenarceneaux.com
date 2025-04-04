@@ -7,7 +7,7 @@ services:
     env_file: .env
     command: hugo
 
-  server:
+  express:
     image: node:latest
     restart: unless-stopped
     volumes:
