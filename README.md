@@ -17,3 +17,4 @@ My blog/personal website. Checkout my projects and read some of my thoughts on t
 
 ## Credits
 - [Archie Theme](https://github.com/athul/archie) for Hugo template and styling
+- [Feather Icons](https://github.com/feathericons/feather)
