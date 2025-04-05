@@ -15,8 +15,10 @@
                 href="{{ $key.url }}"
                 rel="me"
                 title="{{ $key.name }}"
-                ><i data-feather="{{ $key.icon }}"></i
-            ></a>
+            >
+                {{ with resources.Get (printf "icons/%s.svg" $key.icon) }} {{
+                .Content | safeHTML }} {{ end }}
+            </a>
             <span class="border"></span>
             {{- end -}}
         </div>
@@ -36,9 +38,4 @@
             end }}
         </div>
     </div>
-    {{- if (isset .Site.Params "social") -}}
-    <script>
-        feather.replace();
-    </script>
-    {{- end -}}
 </footer>

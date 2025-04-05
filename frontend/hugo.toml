@@ -2,7 +2,7 @@ baseURL = 'https://jadenarceneaux.com'
 languageCode = 'en-us'
 title = 'Jaden Arceneaux'
 copyright = "© Jaden Arceneaux"
-pagination.pagerSize = 8               # articles per pag
+pagination.pagerSize = 8
 # Code Highlight
 pygmentsstyle = "dracula"
 pygmentscodefences = true
