@@ -8,7 +8,7 @@
         format console
     }
 
-    @staticAssets path /fonts* /css* /js*
+    @staticAssets path /fonts* /css* /js* /icons*
 
     header @staticAssets {
         Cache-Control "public, max-age=31536000, s-maxage=31536000"
