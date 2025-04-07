@@ -8,7 +8,7 @@ readTime=5
 
 ## Introduction
 
-Call me needy, call me entitled, call me self-centered or vein, but I can't fucking stand when I follow someone on Instagram and they don't follow me back. It's even worse when someone follows me, I follow them back, and then they unfollow me hoping I don't notice. WELL BEST BELIEVE I SEE YOU WEIRDOS. So today we're going to do some light investigation into Instagram's API to figure out who doesn't follow me back.
+Call me needy, call me entitled, call me self-centered or vein, but I can't stand when I follow someone on Instagram and they don't follow me back. It's even worse when someone follows me, I follow them back, and then they unfollow me hoping I don't notice. WELL BEST BELIEVE I SEE YOU WEIRDOS. So today we're going to do some light investigation into Instagram's API to figure out who doesn't follow me back.
 
 ## Getting Started
 
