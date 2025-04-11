@@ -19,7 +19,8 @@ Here's where we encounter our first issue. Behind the scenes, there's a bunch mo
 This is what that fetch command looks like.
 
 ```javascript
-fetch("https://www.instagram.com/api/v1/friendships/12416222030/followers/?count=100&max_id=4EwS1VARoYvR3hiLVCdOOC5aI65hBhpw&search_surface=follow_list_page", { "credentials": "include",
+fetch("https://www.instagram.com/api/v1/friendships/12416222030/followers/?count=100&max_id=4EwS1VARoYvR3hiLVCdOOC5aI65hBhpw&search_surface=follow_list_page", {
+    "credentials": "include",
     "headers": {
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0",
         "Accept": "*/*",
