@@ -18,7 +18,7 @@
 }
 
 {$API_ADDRESS} {
-    reverse_proxy server:3000
+    reverse_proxy express:3000
     log {
         output file /var/log/caddy/api.access.log
         format console
