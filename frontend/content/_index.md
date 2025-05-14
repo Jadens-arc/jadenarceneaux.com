@@ -15,7 +15,6 @@ in beautiful Las Vegas, Nevada🌵
 - contact@jadenarceneaux.com
 - [Instagram](https://www.instagram.com/jaden.svg/)
 - [LinkedIn](https://www.linkedin.com/in/jaden-arceneaux/)
-- [Resume](https://s3.us-west-1.amazonaws.com/jadenarceneaux.com/Resume.pdf)
 - [GitHub](https://github.com/jadens-arc)
 - [Public Key](/misc#my-pgp-public-key--download)
   - You can verify it at [keys.openpgp.org](https://keys.openpgp.org/)
