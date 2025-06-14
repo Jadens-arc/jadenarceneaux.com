@@ -7,7 +7,7 @@ isFavorite = false
 
 Sorry for not posting in a minute. I've been busy, and I have a few big posts lined up in the queue. But for now, I want to talk about one of my most recent personal projects.
 
-It started with the perfect storm of events. The first is that I finally set up Proxmox on my home server. This allowed me to do much better virtualization of my self-hosted services. Previously, I was using Docker to host multiple containers, but that was messy, and port conflicts were aplenty. The second factor is a request from my girlfriend. She loves having bedtime stories read to her every night, and she asked if I could read a few to her.
+It started with the perfect storm of events. The first was that I finally set up Proxmox on my home server. This allowed me to do much better virtualization of my self-hosted services. Previously, I was using Docker to host multiple containers, but that was messy, and port conflicts were aplenty. The second factor was a request from my girlfriend. She loves having bedtime stories read to her every night, and she asked if I could read a few to her.
 
 That's when my genius kicked into action, and I realized I could automate this. And it'd be the perfect excuse for me to do a deep dive into hosting my own LLM. This is my first time working with AI since I was a junior in high school, trying to make a neural network classifier (shoutout The Sentdex). 
 
