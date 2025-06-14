@@ -15,7 +15,7 @@ So the hunt was on.
 
 I decided that I wanted to self-host everything, including the language model. I didn't want to make just another ChatGPT wrapper. That felt lazy. And the thought of OpenAI/Microsoft being able to read everything I was generating just killed the intimacy of it for me. Also, self-hosting a language model just felt like it had so much swag and aura around it, so I couldn't resist. 
 
-That's when I found [Ollama](https://ollama.com/), which quite literally reduced self-hosting a model down to a single command. After setting up an Ubuntu server virtual machine on my home server, I ran `curl -fsSL | sh`, and from there I could install any language model of my choosing. I ended up going with the Google Gemma 3 1 billion parameter model. It was the latest and greatest thing at that moment, so it was a no-brainer. 
+That's when I found [Ollama](https://ollama.com/), which quite literally reduced self-hosting a model down to a single command. After setting up an Ubuntu server virtual machine on my home server, I ran `curl -fsSL https://ollama.com/install.sh | sh`, and from there I could install any language model of my choosing. I ended up going with the Google Gemma 3 1 billion parameter model. It was the latest and greatest thing at that moment, so it was a no-brainer. 
 
 Just like that, I had a simple REST API set up that I could make requests to and get coherent responses from. After that, it was a matter of tweaking the prompt until I could get the perfect stories to generate.
 
