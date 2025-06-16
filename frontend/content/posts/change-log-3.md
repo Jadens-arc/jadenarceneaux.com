@@ -3,7 +3,6 @@ title = 'Change Log #3'
 date = 2025-03-28T14:26:26-07:00
 draft = false
 isFavorite = false
-readTime=2
 +++
 
 Major code restructure lmao.

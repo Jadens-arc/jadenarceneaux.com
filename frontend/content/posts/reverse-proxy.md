@@ -3,7 +3,6 @@ title = 'Reverse Proxies Explained: The Underrated Third Wheel of Web Developmen
 date = 2025-02-27T18:20:36-08:00
 draft = false
 isFavorite = false
-readTime=4
 +++
 ## Introduction
 

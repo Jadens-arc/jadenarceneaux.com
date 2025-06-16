@@ -2,7 +2,7 @@
 title = 'My Experience With LineageOS'
 date = 2024-06-16T18:18:34-07:00
 draft = false
-readTime=5
+
 isFavorite = true
 +++
 

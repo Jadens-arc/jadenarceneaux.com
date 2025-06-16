@@ -11,9 +11,8 @@
 <section class="list-item">
   <h2 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
   <time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-  {{- if .Params.readTime -}}
-    <span> | {{ .Params.readTime }} Minute{{- if eq .Params.readTime 1 -}}{{- else -}}s{{- end -}}</span>
-  {{- end -}}
+  {{ $readTime := div (( split .Content " ") | len) 238 }}
+  <span> | {{ $readTime }} Minute{{- if ne $readTime 1 -}}s{{- end -}}</span>
   <br>{{ template "partials/pagedescription.html" . }}
   <a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
 </section>

@@ -2,7 +2,6 @@
 title = 'Privacy pt. 1: Introduction'
 date = 2024-03-30T15:07:48-07:00
 draft = false
-readTime = 4
 +++
 
 To be clear, I'm specifically talking about data/online privacy. Privacy exists in so many other contexts too.

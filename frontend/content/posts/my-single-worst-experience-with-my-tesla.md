@@ -3,7 +3,6 @@ title = 'My Single Worst Experience with my Tesla'
 date = 2024-12-29T18:36:56-08:00
 draft = false
 isFavorite = false
-readTime = 4
 +++
 For those of you who don't know, I drive a 2024 Tesla Model 3 affectionately named Teezo that I've owned for about five months. Aside from a few bumps in the road, it has been an absolute joy to own. A full account of what it's like to own the car is on the way so look out for that blog post in the future. But today I want to focus on one particularly harsh "bump in the road" that I encountered hours ago. 
 

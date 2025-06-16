@@ -3,7 +3,6 @@ title = 'Kitty'
 date = 2024-03-03T21:13:02-08:00
 draft = false
 tags=["mac", "configs", "neovim"]
-readTime = 2
 +++
 
 While on a quest to have the best Neovim setup possible, I hit a roadblock.

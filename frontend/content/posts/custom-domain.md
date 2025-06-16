@@ -3,7 +3,6 @@ title = 'Using a custom domain name with Gmail for free'
 date = 2024-10-16T19:46:49-07:00
 draft = false
 isFavorite = false
-readTime = 3
 +++
 
 Despite what Google might advertise with Google Workspace, there is a free alternative to get a custom domain with Gmail. Although it does take some technical know-how

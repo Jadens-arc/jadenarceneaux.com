@@ -3,7 +3,6 @@ title = 'Change Log #2'
 date = 2025-02-26T12:21:39-08:00
 draft = false
 isFavorite = false
-readTime = 4
 +++
 The biggest update yet. 
 

@@ -3,7 +3,6 @@ title = 'What Do I Actually Eat'
 date = 2024-12-28T17:34:06-08:00
 draft = false
 isFavorite = false
-readTime = 3
 +++
 
 The question that everyone around me seems to constantly ask. I'll admit, I don't eat much, I never have. Since birth, I've technically been a [pollotarian](https://en.wikipedia.org/wiki/Pollotarianism) but I say technically because it's not something I do intentionally.

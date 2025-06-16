@@ -3,7 +3,6 @@ title = 'What is Opium.press'
 date = 2024-02-21T06:54:19-08:00
 draft = false
 tags=["project", "php"]
-readTime=2
 +++
 The shallow answer is a social media platform written in PHP using the Symfony framework. It's hosted using the Google Cloud Platform in a single VM instance. The production database is MariaDB.
 

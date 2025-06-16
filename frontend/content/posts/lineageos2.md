@@ -2,7 +2,6 @@
 title = 'LineageOS pt.2'
 date = 2024-06-24T19:10:51-07:00
 draft = false
-readTime=1
 +++
 
 Figured I'd make a follow-up to my original post and go into more detail about my experience using LineageOS.
