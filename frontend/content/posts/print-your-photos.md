@@ -3,7 +3,7 @@ title = "Print Your Photos: storage volatility, the impermanence of the cloud, &
 date = 2024-03-27T19:12:24-07:00
 draft = false
 tags = ["ramblings", "photo", "psa"]
-readTime = 6
+
 isFavorite = true
 +++
 ## Introduction

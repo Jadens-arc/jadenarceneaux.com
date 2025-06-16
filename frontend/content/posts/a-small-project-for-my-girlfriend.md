@@ -3,7 +3,6 @@ title = 'A Small Project for My Girlfriend'
 date = 2025-06-14T12:25:13-07:00
 draft = false
 isFavorite = false
-readTime = 3
 +++
 
 Sorry for not posting in a minute. I've been busy, and I have a few big posts lined up in the queue. But for now, I want to talk about one of my most recent personal projects.

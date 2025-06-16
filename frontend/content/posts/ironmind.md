@@ -3,7 +3,6 @@ title = 'What is Brainfuck + Ironmind'
 date = 2024-02-21T16:45:57-08:00
 draft = false
 tags=["project", "rust", "brainfuck"]
-readTime = 4
 +++
 
 ## What is Brainfuck

@@ -2,7 +2,6 @@
 title = 'Change Log #1'
 date = 2024-07-10T23:12:50-07:00
 draft = false
-readTime = 1
 +++
 
 ## AWS

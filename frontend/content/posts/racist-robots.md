@@ -2,7 +2,7 @@
 title = 'Racist Robots'
 date = 2024-04-20T12:47:23-07:00
 draft = false
-readTime = 7
+
 isFavorite = true
 +++
 

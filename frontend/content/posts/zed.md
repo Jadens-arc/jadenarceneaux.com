@@ -2,7 +2,6 @@
 title = 'Zed'
 date = 2024-04-22T20:48:40-07:00
 draft = false
-readTime = 5
 +++
 
 Call me a follower. I'm trying out the Zed Editor for the first time, and these are my initial thoughts.

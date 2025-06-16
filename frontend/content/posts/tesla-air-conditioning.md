@@ -3,7 +3,6 @@ title = 'Why does my Tesla stink?'
 date = 2024-10-21T02:45:49-07:00
 draft = false
 isFavorite = false
-readTime = 3
 +++
 
 First off I should say that I absolutely love my Tesla Model 3. It very well might be one of my favorite cars of all time and it's by far the best daily driver I could ask for. 

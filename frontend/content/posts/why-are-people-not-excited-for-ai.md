@@ -3,7 +3,6 @@ title = 'Why Are People Not Excited for AI'
 date = 2024-12-30T00:40:18-08:00
 draft = false
 isFavorite = false
-readTime = 5
 +++
 
 > This is just a compilation of my observations in my day-to-day life asking people about AI. I could very well just be hanging out with haters and not even know it. I should also probably say that of course I'm biased because I'm a programmer and also I love my job.

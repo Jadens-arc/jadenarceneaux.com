@@ -3,7 +3,6 @@ title = 'Why Does Every Tech Company Think Everyone Wants AI'
 date = 2024-10-29T18:24:10-07:00
 draft = false
 isFavorite = false
-readTime = 2
 +++
 
 Truth be told, I only know one guy who's actually excited about AI. Everyone else is largely apathetic towards it at best. But It seems like every product that comes out finds some way to shoehorn AI into it. There's a whole think piece in itself about why no one cares about it, but the bigger question is why does every company think we want it?

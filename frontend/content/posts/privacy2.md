@@ -2,7 +2,6 @@
 title = 'Privacy pt. 2: Actionables'
 date = 2024-04-07T00:49:07-07:00
 draft = false 
-readTime = 8
 +++
 Right off the bat I want to say that it is impossible to live a 100% private life. The truth is that on some level someone has to know something about you for you to do anything. Privacy exists on a spectrum and it's 100% up to the individual to decide what they are comfortable with, at least it should be.
 

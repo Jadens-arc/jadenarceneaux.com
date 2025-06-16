@@ -3,7 +3,6 @@ title = 'Favorite Pieces of Software 2024'
 date = 2024-12-31T17:38:27-08:00
 draft = false
 isFavorite = false
-readTime = 3
 +++
 
 Let's get straight to it. Most of this tech isn't "new" it's just new to me and maybe new to many of you. 
