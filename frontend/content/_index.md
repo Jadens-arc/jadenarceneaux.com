@@ -27,7 +27,7 @@ Personally, programming has been my passion for a big part of my
 life. I taught myself my first programming language at 13 and
 instantly became hooked.
 
-Feel free to check out some of my projects or read my blog, and thanks
+Feel free to check out some of [my projects](/projects) or read [my blog](/posts), and thanks
 for being here at all :)
 
 Don't hesitate to reach me @ contact@jadenarceneaux.com and feel free to encrypt your emails using my public key listed above.
