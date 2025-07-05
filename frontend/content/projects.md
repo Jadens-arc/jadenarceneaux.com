@@ -5,7 +5,10 @@ draft = false
 
 My focus throughout my professional life has been enterprise resource planning (ERP) software. It has a certain charm to it. Some of the projects are proprietary and confidential and others are open-sourced. These are just the highlights of everything I've worked on. To get a more comprehensive look at my code feel free to check out my [GitHub](https://github.com/jadens-arc).
 
-- **[ISP.Net](https://isp.net)** - Primarily used PHP with the Symfony framework
+- **[ISP.Net](https://isp.net)** - 2022-present
+  - My actual job lmao
+  - A local internet service provider
+  - Primarily used PHP with the Symfony framework
   - Lead Management System
     - Help track and nurture potential clients
   - HR Information System
@@ -26,7 +29,7 @@ My focus throughout my professional life has been enterprise resource planning (
   - Refactored and rewrote thousands of lines of legacy code
 - **[jadenarceneaux.com](https://github.com/jadens-arc/jadenarceneaux.com)** - 2023-present
   - This very website lol
-  - 400+ readers anually
+  - 400+ readers annually
   - Static site generation with Hugo
   - API written with Node.js and Express.js
   - Deployed with Docker
@@ -44,7 +47,7 @@ My focus throughout my professional life has been enterprise resource planning (
   - A platform for writers to share ideas and opinions
   - Written in PHP using the Symfony framework
   - Hosted on Google Cloud
-  - Made shortly after I graduated high school. My hobby of journaling turned into a full obsession with writing. It started off with me writing one-off album reviews when I was in class but evolved into me wanting to share them with the world. I wanted to make a platform for writers, that didn't focus on viewer retention and addiction. There's a lot more lore to this one [you can read it here](/posts/what-is-opium-press/)
+  - Made shortly after I graduated high school. My hobby of journaling turned into a full obsession with writing. It started with me writing one-off album reviews when I was in class but evolved into me wanting to share them with the world. I wanted to make a platform for writers, that didn't focus on viewer retention and addiction. There's a lot more lore to this one [you can read it here](/posts/what-is-opium-press/)
 - **[Penny](https://github.com/jadens-arc/Penny)** - 2021-22
   - AES256 encrypted journaling desktop app
   - Written in Javascript using Electron
