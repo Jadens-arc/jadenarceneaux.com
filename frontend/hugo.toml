@@ -13,8 +13,8 @@ getenv = ['^HUGO_', '^CI$', '^API_ADDRESS$']
 
 [params]
 og_image = "/icon.png"
-subtitle = "Software Developer and occacional writer"
-description = "Software developer, occasional writer, and dedicated Neovim user based in beautiful Las Vegas, Nevada🌵"
+subtitle = "Software Developer and occasional writer"
+description = "Software developer, occasional writer, and dedicated NeoVim user based in beautiful Las Vegas, Nevada🌵"
 mode = "toggle"
 mathjax = true                                                                                                         # enable MathJax support
 katex = true                                                                                                           # enable KaTeX support
