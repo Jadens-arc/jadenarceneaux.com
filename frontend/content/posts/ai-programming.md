@@ -66,4 +66,10 @@ For a while, I've had this thought in my head, "this is what it must have felt l
 
 AI has the potential to be the next evolution of that, one step closer in bridging the gap between our thoughts and our implementations. But what is also worth noting is the diminishing returns of abstractions. Compilers and low-level languages, being the first step in this evolution, made the most significant impact on the way we write code. High-level languages like Python have made it easier to write code, but they haven't eradicated the need for low-level languages in the same way that compilers did for assembly. AI has the potential to do the same thing for high-level languages, but it's important to remember that it won't completely replace them. 
 
-What that does mean is that programmers will get to spend more time solving problems and reviewing code written by AI rather than writing code by hand, but writing code was never the hard part. 
+What that does mean is that programmers will get to spend more time solving problems and reviewing code written by AI rather than writing code by hand, but writing code was never the hard part. It's the thinking.
+
+
+{{< img
+url="https://s3.us-west-1.amazonaws.com/jadenarceneaux.com/thinker.jpg"
+description="The thinker"
+align="center">}}
