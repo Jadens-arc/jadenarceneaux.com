@@ -9,14 +9,14 @@ isFavorite = false
 - Me? Never?
 - Gurt: Yo
 
-AI is the buzzword of the decade, and the possibility of it revolutionizing the tech industry is on the forefront of every dude who says, "I'm more of an ideas guy" (derogatory) than an engineer. 
+AI is the buzzword of the decade, and the possibility of it revolutionizing the tech industry is on the forefront of every dude who says, "I'm more of an ideas guy (derogatory) than an engineer". 
 
 ## The Current State of Things
 I feel like everyone already knows the limitations of AI-assisted development at this point, especially if you work in the industry. But if for some reason you don't, then here's the rundown.
 
 Context windows (the amount of text you can give to a model before it starts to forget) are still too small to contain any large codebases, but you can build simple projects just fine. There are ways to work around this, like using a microservice architecture or breaking down the codebase into smaller modules. But it's a huge limitation for big companies that already have large codebases.
 
-The actual quality of responses seems to vary from model to model.
+The actual quality of responses vary from model to model.
 
 ## My Experience
 
@@ -32,7 +32,7 @@ I'm not going to lie, I haven't tried Claude or Grok too heavily; the latter in 
 
 Yes and no.
 
-When it comes to developing anything that interfaces with an unknown, like an undocumented library or an API you're not familiar with, it's really good. I've personally used it to debug a router API and command-line interface, and it was literally giving me commands to run on the router to figure out what was wrong with it. Commands that would have taken me minutes, potentially hours, to Google or years to find in the documentation.
+When it comes to developing anything that interfaces with an unknown, like an undocumented library or an API you're not familiar with, it's really good. I've personally used it to debug a router API and command-line interface, and it was literally giving me commands to run on the router to figure out what was wrong with it. Commands that would have taken me minutes, potentially hours, to Google or find in the documentation.
 
 But can it write code? Can it implement features?
 
@@ -56,14 +56,14 @@ The truth is, writing code is easy. It always has been.
 
 ## Writing Code is Easy
 
-I type 100 words per minute, I use Vim keybinds to navigate my IDE, and I use every autocomplete extension and linter under the sun. When I know what I want to write, I can bang out a couple hundred lines of code in a couple of minutes.
+I type 100 words per minute, I use Vim key-binds to navigate my IDE, and I use every autocomplete extension and linter under the sun. When I know what I want to write, I can bang out a couple hundred lines of code in a couple of minutes.
 
 Programming has never been about being a code monkey; it's about problem-solving, it's about translating nuance into something concrete. It's about being decisive and being able to communicate your decisions with others and own up to them if something goes wrong. 
 
 For good programmers who know the syntax of the language they're using, AI in its current state is nothing more than a powerful research tool and some cool autocomplete. It doesn't eliminate the real heavy lifting of actually conceptualizing a problem and understanding the solution.
 
-For a while, I've had this thought in my head that "this is what it must have felt like when compilers came out," and I think I'm absolutely right. Compilers were a massive time-saver for ancient programmers. It removed the need to manually type an absolutely incredible amount of code and gave rise to key abstractions like functions and classes. Building on top of that, high-level languages like Python removed the need to manually deal with things like memory management and datatypes. 
+For a while, I've had this thought in my head, "this is what it must have felt like when compilers came out," and I think I'm kinda right. Compilers were a massive time-saver for ancient programmers. It removed the need to manually type an gargantuan amount of code and gave rise to key abstractions like functions and classes. Building on top of that, high-level languages like Python removed the need to manually deal with things like memory management and datatypes. 
 
-AI has the potential to be the next evolution of that, one step in bridging the gap between our thoughts and our implementations. But what is also worth noting is the diminishing returns of abstractions. Compilers and low-level languages, being the first step in this evolution, made the most significant impact on the way we write code. High-level languages like Python have made it easier to write code, but they haven't eradicated the need for low-level languages in the same way that compilers did for assembly. AI has the potential to do the same thing for high-level languages, but it's important to remember that it won't completely replace them. 
+AI has the potential to be the next evolution of that, one step closer in bridging the gap between our thoughts and our implementations. But what is also worth noting is the diminishing returns of abstractions. Compilers and low-level languages, being the first step in this evolution, made the most significant impact on the way we write code. High-level languages like Python have made it easier to write code, but they haven't eradicated the need for low-level languages in the same way that compilers did for assembly. AI has the potential to do the same thing for high-level languages, but it's important to remember that it won't completely replace them. 
 
-What it does mean is that programmers will get to spend more time solving problems and reviewing code written by AI rather than writing it by hand, but writing code was never the hard part. 
+What that does mean is that programmers will get to spend more time solving problems and reviewing code written by AI rather than writing code by hand, but writing code was never the hard part. 
