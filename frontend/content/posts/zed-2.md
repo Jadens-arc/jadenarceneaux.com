@@ -1,6 +1,6 @@
 +++
-title = 'Zed Pt. 2'
-date = 2025-08-28T22:45:14-07:00
+title = 'A Year Later: Zed is the AI Editor I Was Waiting For'
+date = 2025-09-04T00:00:00-07:00
 draft = false
 isFavorite = false
 +++
@@ -28,4 +28,4 @@ I've been using it both at work and at home.
 - It has the language server support needed to work with any framework.
 - Plus, it has solid Vim keybindings.
 
-For any professional developers who want to integrate AI into their workflow, Zed + Gemini 2.5 Pro is a great option.
+For any professional developer looking to integrate AI into their workflow, I can't recommend the Zed and Gemini 2.5 Pro combination enough. It's a game changer.
