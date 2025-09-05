@@ -29,9 +29,9 @@ ls | sort
 
 This will output a sorted list of all the files and directories in your current directory.
 
-## Built-in Commands
+## Standard Commands
 
-> At least on most distros
+> Ones you'll find on most distros
 
 ### `awk`
 
@@ -101,7 +101,7 @@ How about instead we use "id=" as our delimiter to divide our sample data into t
 
 ### `sed`
 
-## `tr`
+### `tr`
 
 Short for translate, this command literally just replaces things. It's so simple
 
@@ -145,13 +145,7 @@ This is perhaps the quickest way to search through any piece of text in Linux, b
 
 Literally an essential. Especially for finding config files or navigating shitty code bases. Search for a file by name. Find all files that match the pattern. That's it. Simple. Easy, breezy, beautiful. 
 
-## 
-
-### 
-
 ### `ln`
-
-### `rsync`
 
 ### `cut`
 
