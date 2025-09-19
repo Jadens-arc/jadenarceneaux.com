@@ -24,7 +24,21 @@ size="100" >}}
 Literally everything that was good about Arc and it's open sourced!
 
 
-## Pinned Tabs
+## Pinned Tabs and Folders
 
-Unlike traditional browsers that have relatively ephemeral tabs that are meant to be closed, Zen prioritizes pinned tabs. These are meant to be websites that you open often. Things that you want to be only a click away. You can even organize them into named folders
+Unlike traditional browsers that have relatively ephemeral tabs that are meant to be closed, Zen prioritizes `pinned tabs`. These are meant to be websites that you open often. Things that you want to be only a click away. You can even organize them into `folders`.
+
+
+## Window Management
+
+Full screening a tab is as easy as hitting `cmd-shift-c`. If you have a mac you know exactly how big of a deal that is. And by simply dragging a tab from the sidebar and onto the page you can easily split screen your tabs completely in app.
+
+## Spaces
+Want to keep your work accounts separate from your school accounts and your personal accounts. Spaces are the answer! Pinned tabs as well as log in information and cookies can all be boxed into convenient spaces which can be switch between by clicking their icons at the bottom of the side bar or by swiping horizontally on the sidebar. 
+
+Honestly I love this the most for managing Google accounts. It's really nice to always know I'm on the right Google account when I'm sending an email or searching something.
+
+## Privacy and Stability
+By far the biggest advantage that Zen has over Arc is the fact that it's an open sourced project. This means that it is entirely 
+
 
