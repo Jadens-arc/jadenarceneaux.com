@@ -3,7 +3,7 @@
 }
 
 html {
-  scrollbar-color: var(--darkMaincolor) white;
+  scrollbar-color: var(--darkMaincolor) #202124;
 }
 
 body {
