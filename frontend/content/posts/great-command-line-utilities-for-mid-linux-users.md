@@ -1,6 +1,6 @@
 +++
 title = 'Great Command Line Utilities for Mid Linux Users'
-date = 2025-09-04T17:20:16-07:00
+date = 2025-09-04T18:47:04-07:00
 draft = false
 isFavorite = false
 +++
@@ -9,7 +9,7 @@ Do you already have a basic understanding of how to navigate the command line? D
 
 ## Concepts to Understand
 
-Bash is just another programming language. Every command is just a line of code that gets run in an interactive shell. All of your usual computer science concepts still apply. Each command is just a function. Just like a function, it returns something. Sometimes two somethings. It has a return code, which basically just says whether or not it ran correctly, and the STDDOUT, which is a string that, if left unhandled, just gets displayed in your terminal. The latter is what you'd normally see whenever you run a command. 
+Bash is basically just another programming language. Every command is just a line of code that gets run in an interactive shell. All of your usual computer science concepts still apply. Each command is just a function. Just like a function, it returns something. Sometimes two somethings. It has a return code, which basically just says whether or not it ran correctly, and the STDDOUT, which is a string that, if left unhandled, just gets displayed in your terminal. The latter is what you'd normally see whenever you run a command. 
 
 ### Redirection
 
@@ -140,6 +140,10 @@ Something fun I like to do to see all the typos I've made over the years is pipe
 ### `grep`
 
 This is perhaps the quickest way to search through any piece of text in Linux, both in the of runtime the command and ease of use
+
+```
+grep -i python history | sort | uniq
+```
 
 ### `find`
 
