@@ -12,7 +12,3 @@ services:
     env_file: .env
     command: hugo server
     
-networks:
-  web_network:
-    driver: bridge
-
