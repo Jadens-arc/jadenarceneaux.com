@@ -10,5 +10,5 @@ services:
     networks:
       - web_network
     env_file: .env
-    command: hugo server
+    command: hugo server --bind 0.0.0.0 --baseURL http://localhost:1313/ --poll 700ms
     
