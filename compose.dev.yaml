@@ -1,0 +1,18 @@
+services:
+  hugo:
+    restart: always
+    image: hugomods/hugo
+    volumes:
+      - hugo_public:/src/public
+      - ./frontend:/src
+    ports:
+      - "1313:1313"
+    networks:
+      - web_network
+    env_file: .env
+    command: hugo server
+    
+networks:
+  web_network:
+    driver: bridge
+
