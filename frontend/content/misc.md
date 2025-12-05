@@ -14,20 +14,17 @@ draft = false
 ## My Setup
 
 - **Laptop**
-  - 2020 M1 Macbook Air
+  - 2025 M4 Macbook Air
   - 512GB of storage
   - 16GB of RAM
-- **Desktop**
-  - ASRock B550-HDV
-  - AMD Ryzen 5 3600
-  - XFX Radeon RX580
-  - 500GB SSD
-  - 2TB Hard Drive
-  - 16GB DDR4 RAM
-  - Cooler Master Q500L case
-  - Dual Boot
-    - Windows 10 (for gaming)
-    - Arch Linux (for everything else)
+  
+- **Home Server**
+  - Dell OptiPlex 7050
+  - Intel i7-7700
+  - 32GB of RAM
+  - 1TB NVMe SSD
+  - Proxmox VE
+    
 
 ## Credits
 
