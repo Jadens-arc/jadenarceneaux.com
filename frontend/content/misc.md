@@ -17,7 +17,6 @@ draft = false
   - 2025 M4 Macbook Air
   - 512GB of storage
   - 16GB of RAM
-  
 - **Home Server**
   - Dell OptiPlex 7050
   - Intel i7-7700
