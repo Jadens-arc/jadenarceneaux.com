@@ -17,6 +17,7 @@ in beautiful Las Vegas, Nevada🌵
 - [LinkedIn](https://www.linkedin.com/in/jaden-arceneaux/)
 - [GitHub](https://github.com/jadens-arc)
 - [Upwork](https://www.upwork.com/freelancers/~01a2c20e79dfbb492e?mp_source=share)
+- [Spotify](https://open.spotify.com/artist/37FSUfROYvcy3tgQAWHOo9)
 - [Public Key](/misc#my-pgp-public-key--download)
   - You can verify it at [keys.openpgp.org](https://keys.openpgp.org/)
 
