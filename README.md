@@ -3,22 +3,35 @@ My blog/personal website. Checkout my projects and read some of my thoughts on t
 
 ## Technology Stack
 
-- Hugo: Static site generation
-- Express.js: Backend API server
-- Caddy: Web server and automatic HTTPS
-- Docker: Containerization and orchestration
+- Hugo: Static site generation (deployed to Vercel)
+- Express.js: Backend API server (deployed to Vercel)
 
-## Build Instructions
+## Deployment
 
-> You MUST have docker installed on your machine
+The repo contains two Vercel projects:
 
-- Make a new `.env` based on the `.env.example` file. This will be for the email server, rate limiter, turnstile verification, as well as the domain names you'd like to host on
-### Production Environment
-- Run `docker compose up -d` to build and start all containers
+- **Frontend** (`frontend/`): Hugo static site, built and deployed by Vercel on push
+- **Backend** (`backend/`): Express.js API server, runs as a Vercel serverless function
 
-### Development Environment
-- Run `docker compose -f d compose.yaml -f compose.dev.yaml up` to build and start all containers in development mode
-- Rather than using Caddy as a reverse proxy, the frontend will be available at `http://localhost:1313` with hot reloading enabled thanks to hugo server
+### Environment Variables
+
+Set these in the Vercel dashboard for each project. See `.env.example` for reference.
+
+**Backend project:** `SMTP_SERVER`, `SMTP_PORT`, `SMTP_EMAIL`, `SMTP_PASSWORD`, `RECEIVER_EMAIL`, `TURNSTILE_SECRET_KEY`, `RATE_LIMIT`
+
+**Frontend project:** `API_ADDRESS` (the domain of your backend, used at Hugo build time)
+
+## Local Development
+
+### Frontend
+```
+cd frontend && hugo server
+```
+
+### Backend
+```
+cd backend && npm install && npm test
+```
 
 ## Credits
 - [Archie Theme](https://github.com/athul/archie) for Hugo template and styling

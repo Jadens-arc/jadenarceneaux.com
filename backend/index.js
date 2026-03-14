@@ -80,6 +80,12 @@ app.post("/forms/contact", (req, res) => {
     });
 });
 
-app.listen(port, () => {
-  console.log(`listening on ${port}`);
-});
+// Export for Vercel serverless runtime
+module.exports = app;
+
+// Local development server
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`listening on ${port}`);
+  });
+}
