@@ -9,6 +9,7 @@ It's been so long since I've written something on here. It's not that I haven't 
 
 - Self hosted small language models on my Mac
   - These are really cool and I think their utility is so underrated
+  - For anyone looking to get started, check out LMStudio
 - Set up Openclaw on my home server
   - It's really cool. The fact I can have AI interact with my machine on such a deep level is amazing. It's allowed me to automate so many parts of my life
   - I integrated it with my car, my email, my journal, it basically runs the show now
@@ -61,6 +62,6 @@ Outside of all this AI stuff I've actually been doing some pretty cool things th
 
 And all of that feels a lot more substantial than any of the AI stuff I've been doing. I might make one blog post about some AI stuff that's actually interesting, but this isn't an AI blog, this is the Jaden Arceneaux blog. And it took me a while to remember that. 
 
-At the end of the day, chill out, it's not that serious. And it's okay for things to be precarious — we're in a recession for crying out loud. No one knows what's going to happen in the future. But if you've read this far, you're intelligent enough and focused enough to figure it out. I know it. It's going to be okay. Do what's right, be intentional, and the rest will work out. You need to have faith.
+At the end of the day, chill out, it's not that serious. And it's okay for things to be precarious, we're in a recession for crying out loud. No one knows what's going to happen in the future. But if you've read this far, you're intelligent enough and focused enough to figure it out. I know it. It's going to be okay. Do what's right, be intentional, and the rest will work out. You need to have faith.
 
 And don't get caught up in one thing, having a well-rounded set of skills is more valuable than you can imagine.
