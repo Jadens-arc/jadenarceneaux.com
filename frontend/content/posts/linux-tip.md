@@ -11,7 +11,7 @@ Okay something just dawned on me...
 rm -rf <directory>
 ```
 
-does the same thing
+does the same thing as
 
 ```bash
 rm -fr <directory>
