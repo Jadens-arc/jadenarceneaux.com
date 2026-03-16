@@ -17,4 +17,4 @@ does the same thing as
 rm -fr <directory>
 ```
 
-This might be the most useless thing you see all day but the idea of writing "remove for real" is frying me right now. This is my petition to make that the standard syntax for running that command.
+This might be the most useless thing you see all, day but the idea of writing "remove for real" is frying me right now😭😭😭. This is my petition to make that the standard syntax for running that command.
