@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "new:blog-post": "node scripts/new-blog-post.mjs"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
