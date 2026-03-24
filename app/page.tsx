@@ -40,7 +40,7 @@ export default function Home() {
         <p className="mt-8 text-sm text-muted-foreground">{greeting}</p>
       )}
 
-      <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+      <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
         Full Stack Developer specializing in scalable applications, automation,
         and business process optimization. Based in beautiful Las Vegas, Nevada. 🌵
       </p>
@@ -71,17 +71,17 @@ export default function Home() {
       <div className="mt-16 mb-16">
         <h2 className="font-heading text-2xl font-bold tracking-tight">A Little More About me.</h2>
         <div className="mt-4 max-w-xl space-y-4 leading-relaxed text-muted-foreground">
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
             I'm born and raised in Las Vegas, Nevada. Programming has been my passion for a huge part of my life. I taught myself my first
             programming language at 13 and instantly became hooked.
           </p>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
             I&apos;m a software developer, occasional writer, and dedicated Neovim user. I have a
             proven track record of leading high-impact projects and improving operational efficiency.
             Whether that&apos;s building ERPs, CRMs, or anything else that makes people&apos;s work
             lives easier.
           </p>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
             This website is one of my favorite projects. Check out the code on{" "}
             <a href="https://github.com/jadens-arc/jadenarceneaux.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
               GitHub
