@@ -72,11 +72,11 @@ export default function Home() {
         <h2 className="font-heading text-2xl font-bold tracking-tight">A Little More About me.</h2>
         <div className="mt-4 max-w-xl space-y-4 leading-relaxed text-muted-foreground">
           <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-            I'm born and raised in Las Vegas, Nevada. Programming has been my passion for a huge part of my life. I taught myself my first
+            Born and raised in Las Vegas. Programming has been my passion for a huge part of my life. I taught myself my first
             programming language at 13 and instantly became hooked.
           </p>
           <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-            I&apos;m a software developer, occasional writer, and dedicated Neovim user. I have a
+            I&apos;m a developer, occasional writer, and dedicated vim keybinds user. I have a
             proven track record of leading high-impact projects and improving operational efficiency.
             Whether that&apos;s building ERPs, CRMs, or anything else that makes people&apos;s work
             lives easier.
