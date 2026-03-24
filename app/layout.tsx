@@ -21,12 +21,49 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const BASE_URL = "https://jadenarceneaux.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: "Jaden Arceneaux",
   description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
   icons: {
     apple: "/icon.png",
   },
+  openGraph: {
+    type: "website",
+    url: BASE_URL,
+    siteName: "Jaden Arceneaux",
+    title: "Jaden Arceneaux",
+    description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${BASE_URL}/#website`,
+      "url": `${BASE_URL}/`,
+      "name": "Jaden Arceneaux",
+      "description": "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+      "inLanguage": "en",
+    },
+    {
+      "@type": "ItemList",
+      "name": "Main Navigation",
+      "itemListElement": [
+        { "@type": "SiteNavigationElement", "position": 1, "name": "Projects", "url": `${BASE_URL}/projects` },
+        { "@type": "SiteNavigationElement", "position": 2, "name": "Blog", "url": `${BASE_URL}/posts` },
+        { "@type": "SiteNavigationElement", "position": 3, "name": "Contact", "url": `${BASE_URL}/contact` },
+        { "@type": "SiteNavigationElement", "position": 4, "name": "Misc", "url": `${BASE_URL}/misc` },
+      ],
+    },
+  ],
 };
 
 const navLinks = [
@@ -49,6 +86,10 @@ export default function RootLayout({
     >
       <SpeedInsights />
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ThemeProvider>
           <header className="relative border-b border-border">
             <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
