@@ -5,7 +5,7 @@ export function Airplane() {
         src="/airplane.svg"
         alt=""
         aria-hidden="true"
-        className="opacity-10 dark:opacity-[0.10] dark:invert"
+        className="opacity-[0.03] dark:opacity-[0.03] dark:invert"
       />
     </div>
   );
