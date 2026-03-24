@@ -31,7 +31,7 @@ export default function Home() {
   const greeting = getSeasonalGreeting();
 
   return (
-    <div className="mx-auto w-full max-w-3xl px-6 py-16">
+    <div>
       {greeting && (
         <p className="mb-8 text-sm text-muted-foreground">{greeting}</p>
       )}

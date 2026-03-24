@@ -59,7 +59,9 @@ export default function RootLayout({
               </div>
             </nav>
           </header>
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">
+            <div className="mx-auto w-full max-w-3xl px-6 py-6">{children}</div>
+          </main>
           <footer className="border-t border-border">
             <div className="mx-auto max-w-3xl px-6 py-6 text-sm text-muted-foreground">
               2026 &copy; Jaden Arceneaux
