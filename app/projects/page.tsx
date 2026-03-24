@@ -40,7 +40,7 @@ export default function Projects() {
   return (
     <div>
       <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
-        Time Wasters.
+        Projects.
       </h1>
 
       <div className="mt-10 divide-y divide-border">
