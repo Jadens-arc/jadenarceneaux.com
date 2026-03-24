@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 const initial: ContactState = { status: "idle" };
 
@@ -40,6 +41,11 @@ export function ContactForm() {
         <Label htmlFor="message">Message</Label>
         <Textarea id="message" name="message" placeholder="What's on your mind?" rows={10} required />
       </div>
+
+      <Turnstile
+        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+        options={{ size: "normal" }}
+      />
 
       <Button type="submit" disabled={pending} className="self-start">
         {pending ? "Sending..." : "Send message"}

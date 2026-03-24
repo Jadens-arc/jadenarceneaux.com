@@ -24,6 +24,24 @@ export async function submitContact(
     return { status: "error", message: "Please enter a valid email address." };
   }
 
+  const token = String(formData.get("cf-turnstile-response") ?? "");
+  if (!token) {
+    return { status: "error", message: "Please complete the CAPTCHA." };
+  }
+
+  const verifyRes = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      secret: process.env.TURNSTILE_SECRET_KEY!,
+      response: token,
+    }),
+  });
+  const verifyData = await verifyRes.json();
+  if (!verifyData.success) {
+    return { status: "error", message: "CAPTCHA verification failed. Please try again." };
+  }
+
   if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN || !process.env.RECEIVER_EMAIL) {
     throw new Error("Missing Mailgun environment variables");
   }

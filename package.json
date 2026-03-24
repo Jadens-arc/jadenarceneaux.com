@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
+    "@marsidev/react-turnstile": "^1.4.2",
     "@tailwindcss/typography": "^0.5.19",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
