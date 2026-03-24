@@ -4,6 +4,6 @@ date = 2026-03-24T07:04:49-07:00
 draft = false
 +++
 
-I think we can all agree that kids seeing things on the internet they shouldn't isn't great. 
+Preventing kids seeing things on the internet they shouldn't is important. Protecting kids should absolutely be a priority.
 
 WE shouldn't have to surveil the masses to make sure YOUR kids are safe online. 
