@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: "ISP.Net",
+    name: "isp.net",
     href: "https://isp.net",
     period: "2022–present",
     description: "My actual job lmao. A local internet service provider. Built and maintained a Lead Management System, HR Information System, Access Control System, Billing System, and CRM. Refactored legacy code throughout.",

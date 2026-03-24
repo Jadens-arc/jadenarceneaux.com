@@ -1,0 +1,49 @@
+"use client";
+
+import { useActionState } from "react";
+import { submitContact, ContactState } from "./actions";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+
+const initial: ContactState = { status: "idle" };
+
+export function ContactForm() {
+  const [state, action, pending] = useActionState(submitContact, initial);
+
+  if (state.status === "success") {
+    return (
+      <p className="mt-10 text-muted-foreground">
+        Message sent — I&apos;ll get back to you soon.
+      </p>
+    );
+  }
+
+  return (
+    <form action={action} className="mt-10 flex flex-col gap-6 w-full">
+      {state.status === "error" && (
+        <p className="text-sm text-destructive">{state.message}</p>
+      )}
+
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="name">Name</Label>
+        <Input id="name" name="name" placeholder="Your name" required />
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="email">Email</Label>
+        <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="message">Message</Label>
+        <Textarea id="message" name="message" placeholder="What's on your mind?" rows={10} required />
+      </div>
+
+      <Button type="submit" disabled={pending} className="self-start">
+        {pending ? "Sending..." : "Send message"}
+      </Button>
+    </form>
+  );
+}

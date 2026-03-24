@@ -42,7 +42,7 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-serif", merriweather.variable)}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+<body className="min-h-full flex flex-col">
         <ThemeProvider>
           <header className="border-b border-border">
             <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
@@ -63,7 +63,7 @@ export default function RootLayout({
             <div className="mx-auto w-full max-w-3xl px-6 py-6">{children}</div>
           </main>
           <footer className="border-t border-border">
-            <div className="mx-auto max-w-3xl px-6 py-6 text-sm text-muted-foreground">
+            <div className="mx-auto max-w-3xl px-6 py-6 text-sm text-muted-foreground text-center ">
               2026 &copy; Jaden Arceneaux
             </div>
           </footer>
