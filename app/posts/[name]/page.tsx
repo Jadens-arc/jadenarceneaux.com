@@ -2,7 +2,9 @@ import { notFound } from "next/navigation";
 import { getPost, getAllSlugs } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import Link from "next/link";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((name) => ({ name }));
@@ -20,8 +22,29 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
   const post = getPost(name);
   if (!post) notFound();
 
-  // Strip Hugo shortcodes before rendering
-  const content = post.content.replace(/\{\{<[^>]+>\}\}/g, "");
+  // Convert Hugo shortcodes; strip any remaining ones
+  const content = post.content
+    .replace(/\{\{<\s*img([\s\S]*?)>\}\}/g, (_, attrs) => {
+      const url = attrs.match(/url="([^"]+)"/)?.[1] ?? "";
+      const description = attrs.match(/description="([^"]+)"/)?.[1] ?? "";
+      const align = attrs.match(/align="([^"]+)"/)?.[1] ?? "left";
+      return `![${description}](${url} "${align}")`;
+    })
+    .replace(/\{\{<\s*audio([\s\S]*?)>\}\}/g, (_, attrs) => {
+      const url = attrs.match(/url="([^"]+)"/)?.[1] ?? "";
+      const align = attrs.match(/align="([^"]+)"/)?.[1] ?? "left";
+      const justifyClass =
+        align === "center"
+          ? "justify-center"
+          : align === "right"
+          ? "justify-end"
+          : "justify-start";
+      return `<div class="flex ${justifyClass} my-4"><audio controls src="${url}" class="w-full max-w-lg"></audio></div>`;
+    })
+    .replace(/\{\{<\s*youtube\s+(\S+)\s*>\}\}/g, (_, id) => {
+      return `<div class="my-4 aspect-video w-full"><iframe class="h-full w-full rounded-md" src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe></div>`;
+    })
+    .replace(/\{\{<[^>]+>\}\}/g, "");
 
   return (
     <div>
@@ -59,7 +82,40 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
       </div>
 
       <div className="prose prose-neutral dark:prose-invert mt-10 max-w-xl">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+          components={{
+            img({ src, alt, title }) {
+              if (!src) return null;
+              const alignClass =
+                title === "center"
+                  ? "mx-auto"
+                  : title === "right"
+                  ? "ml-auto"
+                  : "mr-auto";
+              return (
+                <span className={`block ${alignClass}`}>
+                  <Image
+                    src={src}
+                    alt={alt ?? ""}
+                    width={800}
+                    height={600}
+                    className="rounded-md"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                  {alt && (
+                    <span className="mt-1 block text-center text-sm text-muted-foreground">
+                      {alt}
+                    </span>
+                  )}
+                </span>
+              );
+            },
+          }}
+        >
+          {content}
+        </ReactMarkdown>
       </div>
     </div>
   );
