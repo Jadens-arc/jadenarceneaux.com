@@ -17,7 +17,7 @@ const projects = [
     name: "Ironmind",
     href: "https://github.com/jadens-arc/Ironmind",
     period: "2024",
-    description: "Esoteric language interpreter and code execution visualizer. Available on crates.io, Snap, and Homebrew. Over 30,000 downloads.",
+    description: "Esoteric language interpreter and code execution visualizer. Available on crates.io, Snap, and Homebrew. Over 40,000 downloads.",
     tags: ["Rust"],
   },
   {
