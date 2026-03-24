@@ -23,6 +23,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Jaden Arceneaux",
   description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+  icons: {
+    apple: "/icon.png",
+  },
 };
 
 const navLinks = [
@@ -43,7 +46,7 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-serif", merriweather.variable)}
       suppressHydrationWarning
     >
-<body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <header className="relative border-b border-border">
             <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
