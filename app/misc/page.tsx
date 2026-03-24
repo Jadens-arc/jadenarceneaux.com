@@ -59,7 +59,7 @@ export default function MiscPage() {
   return (
     <div className="space-y-14">
       <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
-        Lowkey my Favorite Page.
+        Misc.
       </h1>
 
       {/* Personal */}
