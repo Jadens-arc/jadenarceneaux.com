@@ -1,4 +1,0 @@
-+++
-title = "Directory"
-layout = "directory"
-+++
