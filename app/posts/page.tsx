@@ -14,7 +14,7 @@ export default async function Blog({
   return (
     <div>
       <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
-        Read all about it.
+        Read All About It.
       </h1>
 
       {page > 1 && (
