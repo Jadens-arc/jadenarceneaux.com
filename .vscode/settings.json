@@ -1,0 +1,22 @@
+{
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "content/posts/first-post.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file",
+      "pattern": "content/posts/what-is-opium-press.md"
+    },
+    {
+      "language": "markdown",
+      "scheme": "file"
+    }
+  ],
+  "cSpell.words": [
+    "nessisary",
+    "subsiquentently"
+  ]
+}
