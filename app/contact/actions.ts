@@ -1,5 +1,8 @@
 "use server";
 
+import Mailgun from "mailgun.js";
+import FormDataNode from "form-data";
+
 export type ContactState =
   | { status: "idle" }
   | { status: "success" }
@@ -21,8 +24,22 @@ export async function submitContact(
     return { status: "error", message: "Please enter a valid email address." };
   }
 
-  // TODO: wire up email delivery (e.g. Resend, Nodemailer)
-  console.log("Contact form submission:", { name, email, message });
+  if (!process.env.MAILGUN_API_KEY || !process.env.MAILGUN_DOMAIN || !process.env.RECEIVER_EMAIL) {
+    throw new Error("Missing Mailgun environment variables");
+  }
+
+  const mg = new Mailgun(FormDataNode).client({
+    username: "api",
+    key: process.env.MAILGUN_API_KEY,
+  });
+
+  await mg.messages.create(process.env.MAILGUN_DOMAIN, {
+    from: `${name} <mailgun@${process.env.MAILGUN_DOMAIN}>`,
+    to: process.env.RECEIVER_EMAIL,
+    "h:Reply-To": `${name} <${email}>`,
+    subject: `Contact form: ${name}`,
+    text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+  });
 
   return { status: "success" };
 }
