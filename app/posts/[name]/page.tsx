@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getPost, getAllSlugs } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,13 +22,24 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
   const post = getPost(name);
   if (!post) notFound();
 
-  // Convert Hugo img shortcodes to markdown images, strip any remaining shortcodes
+  // Convert Hugo shortcodes; strip any remaining ones
   const content = post.content
     .replace(/\{\{<\s*img([\s\S]*?)>\}\}/g, (_, attrs) => {
       const url = attrs.match(/url="([^"]+)"/)?.[1] ?? "";
       const description = attrs.match(/description="([^"]+)"/)?.[1] ?? "";
       const align = attrs.match(/align="([^"]+)"/)?.[1] ?? "left";
       return `![${description}](${url} "${align}")`;
+    })
+    .replace(/\{\{<\s*audio([\s\S]*?)>\}\}/g, (_, attrs) => {
+      const url = attrs.match(/url="([^"]+)"/)?.[1] ?? "";
+      const align = attrs.match(/align="([^"]+)"/)?.[1] ?? "left";
+      const justifyClass =
+        align === "center"
+          ? "justify-center"
+          : align === "right"
+          ? "justify-end"
+          : "justify-start";
+      return `<div class="flex ${justifyClass} my-4"><audio controls src="${url}" class="w-full max-w-lg"></audio></div>`;
     })
     .replace(/\{\{<[^>]+>\}\}/g, "");
 
@@ -69,6 +81,7 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
       <div className="prose prose-neutral dark:prose-invert mt-10 max-w-xl">
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
           components={{
             img({ src, alt, title }) {
               if (!src) return null;
