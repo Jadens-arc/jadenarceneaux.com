@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { MobileNav } from "@/components/mobile-nav";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -44,18 +45,21 @@ export default function RootLayout({
     >
 <body className="min-h-full flex flex-col">
         <ThemeProvider>
-          <header className="border-b border-border">
+          <header className="relative border-b border-border">
             <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
               <Link href="/" className="font-heading text-lg font-semibold tracking-tight">
                 Jaden Arceneaux
               </Link>
               <div className="flex items-center gap-1">
-                {navLinks.map(({ href, label }) => (
-                  <Button key={href} variant="ghost" size="sm" asChild>
-                    <Link href={href}>{label}</Link>
-                  </Button>
-                ))}
+                <div className="hidden sm:flex items-center gap-1">
+                  {navLinks.map(({ href, label }) => (
+                    <Button key={href} variant="ghost" size="sm" asChild>
+                      <Link href={href}>{label}</Link>
+                    </Button>
+                  ))}
+                </div>
                 <ThemeToggle />
+                <MobileNav />
               </div>
             </nav>
           </header>

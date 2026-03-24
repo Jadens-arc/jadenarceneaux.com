@@ -17,6 +17,20 @@ export default async function Blog({
         Read all about it.
       </h1>
 
+      {page > 1 && (
+        <div className="mt-8 flex items-center justify-between">
+          <Button variant="outline" size="sm" asChild>
+            <Link href={`/posts?page=${page - 1}`}>Previous</Link>
+          </Button>
+          <span className="text-sm text-muted-foreground">
+            Page {page} of {totalPages}
+          </span>
+          <Button variant="outline" size="sm" asChild disabled={page >= totalPages}>
+            <Link href={`/posts?page=${page + 1}`}>Next</Link>
+          </Button>
+        </div>
+      )}
+
       <div className="mt-10 divide-y divide-border">
         {posts.map(({ slug, title, date, tags, summary }) => (
           <div key={slug} className="py-5">
