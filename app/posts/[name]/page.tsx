@@ -97,7 +97,7 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
               return (
                 <span className={`block ${alignClass}`}>
                   <Image
-                    src={src}
+                    src={src as string}
                     alt={alt ?? ""}
                     width={800}
                     height={600}
