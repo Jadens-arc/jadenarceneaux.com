@@ -51,7 +51,7 @@ export default function Home() {
           projects
         </Link>{" "}
         and{" "}
-        <Link href="/blog" className="underline underline-offset-4 hover:text-foreground transition-colors">
+        <Link href="/posts" className="underline underline-offset-4 hover:text-foreground transition-colors">
           blog
         </Link>
         .
