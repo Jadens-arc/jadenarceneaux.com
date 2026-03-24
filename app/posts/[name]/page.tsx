@@ -3,6 +3,7 @@ import { getPost, getAllSlugs } from "@/lib/posts";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((name) => ({ name }));
@@ -20,8 +21,15 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
   const post = getPost(name);
   if (!post) notFound();
 
-  // Strip Hugo shortcodes before rendering
-  const content = post.content.replace(/\{\{<[^>]+>\}\}/g, "");
+  // Convert Hugo img shortcodes to markdown images, strip any remaining shortcodes
+  const content = post.content
+    .replace(/\{\{<\s*img([\s\S]*?)>\}\}/g, (_, attrs) => {
+      const url = attrs.match(/url="([^"]+)"/)?.[1] ?? "";
+      const description = attrs.match(/description="([^"]+)"/)?.[1] ?? "";
+      const align = attrs.match(/align="([^"]+)"/)?.[1] ?? "left";
+      return `![${description}](${url} "${align}")`;
+    })
+    .replace(/\{\{<[^>]+>\}\}/g, "");
 
   return (
     <div>
@@ -59,7 +67,39 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
       </div>
 
       <div className="prose prose-neutral dark:prose-invert mt-10 max-w-xl">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            img({ src, alt, title }) {
+              if (!src) return null;
+              const alignClass =
+                title === "center"
+                  ? "mx-auto"
+                  : title === "right"
+                  ? "ml-auto"
+                  : "mr-auto";
+              return (
+                <span className={`block ${alignClass}`}>
+                  <Image
+                    src={src}
+                    alt={alt ?? ""}
+                    width={800}
+                    height={600}
+                    className="rounded-md"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                  {alt && (
+                    <span className="mt-1 block text-center text-sm text-muted-foreground">
+                      {alt}
+                    </span>
+                  )}
+                </span>
+              );
+            },
+          }}
+        >
+          {content}
+        </ReactMarkdown>
       </div>
     </div>
   );
