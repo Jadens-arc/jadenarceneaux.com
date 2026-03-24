@@ -116,7 +116,7 @@ export default function MiscPage() {
 
       {/* PGP */}
       <section className="space-y-3">
-        <h2 className="font-heading text-2xl font-bold tracking-tight">PGP Public Key</h2>
+        <h2 className="font-heading text-2xl font-bold tracking-tight" id="pgp-key">PGP Public Key</h2>
         <p className="text-sm text-muted-foreground">
           Verifiable at{" "}
           <a
