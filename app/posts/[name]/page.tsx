@@ -41,6 +41,9 @@ export default async function PostPage({ params }: { params: Promise<{ name: str
           : "justify-start";
       return `<div class="flex ${justifyClass} my-4"><audio controls src="${url}" class="w-full max-w-lg"></audio></div>`;
     })
+    .replace(/\{\{<\s*youtube\s+(\S+)\s*>\}\}/g, (_, id) => {
+      return `<div class="my-4 aspect-video w-full"><iframe class="h-full w-full rounded-md" src="https://www.youtube.com/embed/${id}" allowfullscreen></iframe></div>`;
+    })
     .replace(/\{\{<[^>]+>\}\}/g, "");
 
   return (
