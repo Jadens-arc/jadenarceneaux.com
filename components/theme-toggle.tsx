@@ -19,7 +19,7 @@ export function ThemeToggle() {
       aria-label="Toggle theme"
       className={!mounted ? "invisible" : ""}
     >
-      {resolvedTheme === "dark" ? <Sun /> : <Moon />}
+      {mounted && (resolvedTheme === "dark" ? <Sun /> : <Moon />)}
     </Button>
   );
 }
