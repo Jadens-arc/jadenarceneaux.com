@@ -22,7 +22,6 @@ const socialLinks = [
   { href: "https://github.com/jadens-arc", label: "GitHub", icon: IconGithub, external: true },
   { href: "https://www.linkedin.com/in/jaden-arceneaux/", label: "LinkedIn", icon: IconLinkedin, external: true },
   { href: "https://www.instagram.com/jaden.svg/", label: "Instagram", icon: IconInstagram, external: true },
-  { href: "https://www.upwork.com/freelancers/~01a2c20e79dfbb492e?mp_source=share", label: "Upwork", icon: Briefcase, external: true },
   { href: "https://open.spotify.com/artist/37FSUfROYvcy3tgQAWHOo9", label: "Spotify", icon: Music, external: true },
   { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false},
 ];
