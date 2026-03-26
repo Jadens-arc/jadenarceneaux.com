@@ -10,18 +10,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
-
-module.exports = {
   async redirects() {
     return [
       {
         source: '/link-in-bio',
         destination: '/',
-        permanent: true, // 308 redirect (use false for 307 temporary)
+        permanent: true,
       },
     ]
   },
-}
+};
 
 export default nextConfig;
