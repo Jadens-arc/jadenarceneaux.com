@@ -6,7 +6,7 @@ draft = false
 
 ## Introduction
 
-Protecting kids on the internet is beyond important. The endless amount of information and content found on every corner of the internet has the ability to shape the mind of our youth. Someone has to be there to steward them through that experience and protect them throughout. How we go about protecting them, how we implement safety measures, and the impact of those safety measure are something we need to deeply consider. 
+Protecting kids on the internet is beyond important. The endless amount of information and content found on every corner of the internet has the ability to shape the mind of our youth. Someone has to be there to steward them through that experience and protect them throughout. How we go about protecting them, how we implement safety measures, and the impact of our implements are all things we need to deeply consider. 
 
 
 ## California & Colorado
