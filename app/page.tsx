@@ -19,11 +19,11 @@ function getSeasonalGreeting(): string | null {
 
 const socialLinks = [
   { href: "mailto:contact@jadenarceneaux.com", label: "Email", icon: Mail, external: false },
+  { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false},
   { href: "https://github.com/jadens-arc", label: "GitHub", icon: IconGithub, external: true },
   { href: "https://www.linkedin.com/in/jaden-arceneaux/", label: "LinkedIn", icon: IconLinkedin, external: true },
   { href: "https://www.instagram.com/jaden.svg/", label: "Instagram", icon: IconInstagram, external: true },
   { href: "https://open.spotify.com/artist/37FSUfROYvcy3tgQAWHOo9", label: "Spotify", icon: Music, external: true },
-  { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false},
 ];
 
 export default function Home() {
@@ -40,12 +40,11 @@ export default function Home() {
       )}
 
       <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-        Full Stack Developer specializing in scalable applications, automation,
-        and business process optimization. Based in beautiful Las Vegas, Nevada. 🌵
+        Software engineer, occasional writer, and dedicated Neovim user based in beautiful Las Vegas, Nevada🌵
       </p>
 
       <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
-        This site is open-source. Feel free to explore my{" "}
+        Feel free to explore my{" "}
         <Link href="/projects" className="underline underline-offset-4 hover:text-foreground transition-colors">
           projects
         </Link>{" "}
@@ -71,17 +70,13 @@ export default function Home() {
         <h2 className="font-heading text-2xl font-bold tracking-tight">A Little More About me.</h2>
         <div className="mt-4 max-w-xl space-y-4 leading-relaxed text-muted-foreground">
           <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-            Born and raised in Las Vegas. Programming has been my passion for a huge part of my life. I taught myself my first
-            programming language at 13 and instantly became hooked.
+            Born and raised in Las Vegas. I taught myself to code at 13 and never really stopped.
+            These days I build production software, ERPs, CRMs, and whatever else makes people's work lives easier.
+            I've been a professional software engineer for over 4 years.
+            Outside of that I also make music as a hobby and you can find that on my Spotify.
           </p>
           <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-            I&apos;m a developer, occasional writer, and dedicated vim keybinds user. I have a
-            proven track record of leading high-impact projects and improving operational efficiency.
-            Whether that&apos;s building ERPs, CRMs, or anything else that makes people&apos;s work
-            lives easier.
-          </p>
-          <p className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-            This website is one of my favorite projects. Check out the code on{" "}
+            This website is one of my favorite projects and it's open source. Check out the code on{" "}
             <a href="https://github.com/jadens-arc/jadenarceneaux.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
               GitHub
             </a>
