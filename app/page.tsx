@@ -19,11 +19,11 @@ function getSeasonalGreeting(): string | null {
 
 const socialLinks = [
   { href: "mailto:contact@jadenarceneaux.com", label: "Email", icon: Mail, external: false },
+  { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false},
   { href: "https://github.com/jadens-arc", label: "GitHub", icon: IconGithub, external: true },
   { href: "https://www.linkedin.com/in/jaden-arceneaux/", label: "LinkedIn", icon: IconLinkedin, external: true },
   { href: "https://www.instagram.com/jaden.svg/", label: "Instagram", icon: IconInstagram, external: true },
   { href: "https://open.spotify.com/artist/37FSUfROYvcy3tgQAWHOo9", label: "Spotify", icon: Music, external: true },
-  { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false},
 ];
 
 export default function Home() {
