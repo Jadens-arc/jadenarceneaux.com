@@ -68,7 +68,7 @@ export default function MiscPage() {
 
       {/* Personal */}
       <motion.div variants={animation_item}>
-        <h2 className="font-heading text-2xl font-bold tracking-tight">Things you never though you wanted to know about me</h2>
+        <h2 className="font-heading text-2xl font-bold tracking-tight">Things you never thought you wanted to know about me</h2>
         <ul className="space-y-1 text-muted-foreground leading-relaxed">
           <li>Scorpio sun, Gemini rising, and Cancer moon</li>
           <li>Favorite languages: Python, Rust, and C</li>
