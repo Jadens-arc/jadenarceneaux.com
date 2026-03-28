@@ -1,3 +1,7 @@
+"use client"
+import { motion } from "motion/react";
+import { animation_container, animation_item } from "@/lib/animation";
+
 const PGP_KEY = `-----BEGIN PGP PUBLIC KEY BLOCK-----
   
   mQINBGX3ETkBEADaIfU6zNii1AyEzTBAeyaJsor7Ypx1OIPrGHRqAfMAAWa5hrlA
@@ -57,23 +61,23 @@ const MONERO_ADDRESS =
 
 export default function MiscPage() {
   return (
-    <div className="space-y-14">
-      <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
+    <motion.div variants={animation_container} initial="hidden" animate="show" className="space-y-14">
+      <motion.h1 variants={animation_item} className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
         Misc.
-      </h1>
+      </motion.h1>
 
       {/* Personal */}
-      <section className="space-y-3">
+      <motion.div variants={animation_item}>
         <h2 className="font-heading text-2xl font-bold tracking-tight">Things you never though you wanted to know about me</h2>
         <ul className="space-y-1 text-muted-foreground leading-relaxed">
           <li>Scorpio sun, Gemini rising, and Cancer moon</li>
           <li>Favorite languages: Python, Rust, and C</li>
           <li>Hobby photographer — Canon M50 with a 15–45mm lens</li>
         </ul>
-      </section>
+      </motion.div>
 
       {/* Setup */}
-      <section className="space-y-4">
+      <motion.div variants={animation_item}>
         <h2 className="font-heading text-2xl font-bold tracking-tight">My Setup</h2>
         <div className="space-y-1">
           <h3 className="font-semibold">Laptop</h3>
@@ -90,10 +94,10 @@ export default function MiscPage() {
             <li>Proxmox VE</li>
           </ul>
         </div>
-      </section>
+      </motion.div>
 
       {/* Support */}
-      <section className="space-y-3">
+      <motion.div variants={animation_item}>
         <h2 className="font-heading text-2xl font-bold tracking-tight">Support</h2>
         <p className="text-muted-foreground">
           Buy me a hot vanilla latte with extra sweetener.
@@ -112,10 +116,10 @@ export default function MiscPage() {
             {MONERO_ADDRESS}
           </p>
         </div>
-      </section>
+      </motion.div>
 
       {/* PGP */}
-      <section className="space-y-3">
+      <motion.div variants={animation_item} className="space-y-3">
         <h2 className="font-heading text-2xl font-bold tracking-tight" id="pgp-key">PGP Public Key</h2>
         <p className="text-sm text-muted-foreground">
           Verifiable at{" "}
@@ -132,10 +136,10 @@ export default function MiscPage() {
         <pre className="overflow-x-auto rounded-md border border-border bg-muted px-4 py-3 font-mono text-xs text-muted-foreground whitespace-pre-wrap break-all">
           {PGP_KEY}
         </pre>
-      </section>
+      </motion.div>
 
       {/* Credits */}
-      <section className="space-y-3">
+      <motion.div variants={animation_item} className="space-y-3">
         <h2 className="font-heading text-2xl font-bold tracking-tight">Credits</h2>
         <ul className="space-y-1 text-muted-foreground">
           <li>
@@ -158,7 +162,7 @@ export default function MiscPage() {
             <a href="https://github.com/jadens-arc/jadenarceneaux.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">Code on GitHub</a>
           </li>
         </ul>
-      </section>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

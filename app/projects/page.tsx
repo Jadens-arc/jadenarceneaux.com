@@ -1,3 +1,8 @@
+"use client";
+import { motion } from "motion/react";
+import { animation_container, animation_item } from "../../lib/animation";
+
+
 const projects = [
   {
     name: "isp.net",
@@ -36,16 +41,17 @@ const projects = [
   },
 ];
 
+
 export default function Projects() {
   return (
-    <div>
-      <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
+    <motion.div variants={animation_container} initial="hidden" animate="show">
+      <motion.h1 variants={animation_item} className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
         Projects.
-      </h1>
+      </motion.h1>
 
       <div className="mt-10 divide-y divide-border">
         {projects.map(({ name, href, period, description, tags }) => (
-          <div key={name} className="py-6">
+          <motion.div variants={animation_item} key={name} className="py-6">
             <div className="flex items-baseline justify-between gap-4">
               <a
                 href={href}
@@ -72,9 +78,9 @@ export default function Projects() {
                 ))}
               </div>
             )}
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
