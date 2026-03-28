@@ -1,4 +1,4 @@
-import { getPaginatedPosts } from "@/lib/posts";
+import { getPaginatedPosts, getAllPostMeta } from "@/lib/posts";
 import { PostsContent } from "@/components/posts-content";
 
 export default async function Blog({
@@ -9,6 +9,7 @@ export default async function Blog({
   const { page: pageParam } = await searchParams;
   const page = Math.max(1, parseInt(pageParam ?? "1", 10) || 1);
   const { posts, totalPages } = getPaginatedPosts(page);
+  const allPosts = getAllPostMeta();
 
-  return <PostsContent posts={posts} page={page} totalPages={totalPages} />;
+  return <PostsContent posts={posts} page={page} totalPages={totalPages} allPosts={allPosts} />;
 }
