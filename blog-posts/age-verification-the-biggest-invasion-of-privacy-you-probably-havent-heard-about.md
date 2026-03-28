@@ -28,7 +28,7 @@ Behind all of this is the looming cloud of increasing government surveillance on
 
 ### The Slope 
 
-And that's the heart of the concern. Int its current state, the legislation from Colorado and California isn't entirely unreasonable. The self-reporting nature of it means that parents have the ability to setup protections for their kids out of the box without needing to constantly monitor their internet behavior. That's genuinely good. But what happens next? what happens when that isn't enough? What happens when kids inevitably lie about their age and we feel the need to verify the age of every person using a computer like the New York bill? What does this say about the future of computers?
+And that's the heart of the concern. In its current state, the legislation from Colorado and California isn't entirely unreasonable. The self-reporting nature of it means that parents have the ability to setup protections for their kids out of the box without needing to constantly monitor their internet behavior. That's genuinely good. But what happens next? what happens when that isn't enough? What happens when kids inevitably lie about their age and we feel the need to verify the age of every person using a computer like the New York bill? What does this say about the future of computers?
 
 ## My Opinion
 **WE** shouldn't have to surveil the masses to make sure **YOUR** kids are safe online. 
