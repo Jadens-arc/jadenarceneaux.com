@@ -3,9 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import TOML from "@iarna/toml";
 import postsIndex from "./generated/posts-index.json";
+import { PER_PAGE } from "./constants";
 
 const POSTS_DIR = path.join(process.cwd(), "blog-posts");
-const PER_PAGE = 10;
 
 export type PostMeta = {
   slug: string;
@@ -79,4 +79,3 @@ export function getAllSlugs(): string[] {
     .map((p) => p.slug);
 }
 
-export { PER_PAGE };

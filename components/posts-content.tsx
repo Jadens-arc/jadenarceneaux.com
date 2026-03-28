@@ -1,24 +1,23 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import Link from "next/link";
+import { useState, useMemo, useEffect, useRef } from "react";
 import Fuse from "fuse.js";
 import { Search } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion } from "motion/react";
 import { animation_container, animation_item } from "@/lib/animation";
+import { PER_PAGE } from "@/lib/constants";
 import type { PostMeta } from "@/lib/posts";
+import Link from "next/link";
 
 type Props = {
-  posts: PostMeta[];
-  page: number;
-  totalPages: number;
   allPosts: PostMeta[];
 };
 
-export function PostsContent({ posts, page, totalPages, allPosts }: Props) {
+export function PostsContent({ allPosts }: Props) {
   const [query, setQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(PER_PAGE);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
   const fuse = useMemo(
     () =>
@@ -35,8 +34,30 @@ export function PostsContent({ posts, page, totalPages, allPosts }: Props) {
 
   const trimmed = query.trim();
   const searchResults: PostMeta[] = trimmed ? fuse.search(trimmed).map((r) => r.item) : [];
-  const displayedPosts = trimmed ? searchResults : posts;
-  const showPagination = !trimmed && totalPages > 1;
+  const displayedPosts = trimmed ? searchResults : allPosts.slice(0, visibleCount);
+  const hasMore = !trimmed && visibleCount < allPosts.length;
+
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((c) => Math.min(c + PER_PAGE, allPosts.length));
+        }
+      },
+      { rootMargin: "200px" }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [allPosts.length]);
+
+  function handleQueryChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setQuery(e.target.value);
+    setVisibleCount(PER_PAGE);
+  }
 
   return (
     <motion.div variants={animation_container} initial="hidden" animate="show">
@@ -53,24 +74,10 @@ export function PostsContent({ posts, page, totalPages, allPosts }: Props) {
           type="search"
           placeholder="Search posts…"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={handleQueryChange}
           className="pl-8"
         />
       </motion.div>
-
-      {showPagination && page > 1 && (
-        <div className="mt-8 flex items-center justify-between">
-          <Button variant="outline" size="sm" asChild>
-            <Link href={`/posts?page=${page - 1}`}>Previous</Link>
-          </Button>
-          <span className="text-sm text-muted-foreground">
-            Page {page} of {totalPages}
-          </span>
-          <Button variant="outline" size="sm" asChild disabled={page >= totalPages}>
-            <Link href={`/posts?page=${page + 1}`}>Next</Link>
-          </Button>
-        </div>
-      )}
 
       <div className="mt-10 divide-y divide-border">
         {trimmed && displayedPosts.length === 0 ? (
@@ -113,19 +120,7 @@ export function PostsContent({ posts, page, totalPages, allPosts }: Props) {
         )}
       </div>
 
-      {showPagination && (
-        <motion.div variants={animation_item} className="mt-8 flex items-center justify-between">
-          <Button variant="outline" size="sm" asChild disabled={page <= 1}>
-            <Link href={`/posts?page=${page - 1}`}>Previous</Link>
-          </Button>
-          <span className="text-sm text-muted-foreground">
-            Page {page} of {totalPages}
-          </span>
-          <Button variant="outline" size="sm" asChild disabled={page >= totalPages}>
-            <Link href={`/posts?page=${page + 1}`}>Next</Link>
-          </Button>
-        </motion.div>
-      )}
+      {hasMore && <div ref={sentinelRef} />}
     </motion.div>
   );
 }
