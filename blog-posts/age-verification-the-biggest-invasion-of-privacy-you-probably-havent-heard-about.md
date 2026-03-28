@@ -1,10 +1,10 @@
 +++
-title = "Online Age Verification: The biggest invasion of privacy you probably haven't heard about"
+title = "Online Age Verification: The biggest threat to our privacy you probably haven't heard about"
 date = 2026-03-24T07:04:49-07:00
 draft = false
 +++
 
-Protecting kids online matters, but how we do it matters just as much. California's [Assembly Bill No. 1043](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) and Colorado's [Senate Bill 26-051](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) both aim to solve this problem through a similar solution. Instead of requiring individual apps to verify user age as is so common internationally in countries like the Philippines, both bills shift the responsibility to operating system providers. To quote the California bill, operating system providers must now "provide an accessible interface at account setup that requires an account holder, as defined, to indicate the birth date, age, or both, of the user of that device." This age information must then be exposed to developers. The legislation refers to this as "providing a signal" regarding the users' age to applications, but as far as I can tell this just seems like an age system call that developers can tap into. Both go into effect on January 1, 2027.
+Protecting kids online matters, but how we do it matters just as much. California's [Assembly Bill No. 1043](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) and Colorado's [Senate Bill 26-051](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) both aim to solve this problem through a similar solution. Instead of requiring individual apps to verify user age as is so common internationally in countries like the Philippines, both bills shift the responsibility to operating system providers. To quote the California bill, operating system providers must now "provide an accessible interface at account setup that requires an account holder, as defined, to indicate the birth date, age, or both, of the user of that device." This age information must then be exposed to developers. The legislation refers to this as "providing a signal" regarding the users' age to applications, but as far as I can tell this just seems like an age API that developers can reference. Both go into effect on January 1, 2027.
 
 ## Cracks in the Floor
 
