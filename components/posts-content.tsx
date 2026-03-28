@@ -23,8 +23,7 @@ export function PostsContent({ allPosts }: Props) {
     () =>
       new Fuse(allPosts, {
         keys: [
-          { name: "title", weight: 2 },
-          { name: "tags", weight: 1.5 },
+          { name: "title", weight: 1 },
           { name: "summary", weight: 1 },
         ],
         threshold: 0.35,
