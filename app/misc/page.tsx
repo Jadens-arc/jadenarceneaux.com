@@ -144,19 +144,23 @@ export default function MiscPage() {
         <ul className="space-y-1 text-muted-foreground">
           <li>
             <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">Next.js</a>
-            {" "}— framework
+            {" "}— Framework
           </li>
           <li>
             <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">shadcn/ui</a>
-            {" "}— components
+            {" "}— Components
           </li>
           <li>
             <a href="https://feathericons.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">Feather Icons</a>
-            {" "}— icons
+            {" "}— Icons
           </li>
           <li>
             <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">Vercel</a>
-            {" "}— hosting
+            {" "}— Hosting
+          </li>
+          <li>
+            <a href="https://motion.dev" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">Motion</a>
+            {" "}— Animations
           </li>
           <li>
             <a href="https://github.com/jadens-arc/jadenarceneaux.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">Code on GitHub</a>
