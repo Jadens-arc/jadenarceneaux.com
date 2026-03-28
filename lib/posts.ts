@@ -2,9 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import TOML from "@iarna/toml";
+import postsIndex from "./generated/posts-index.json";
+import { PER_PAGE } from "./constants";
 
 const POSTS_DIR = path.join(process.cwd(), "blog-posts");
-const PER_PAGE = 10;
 
 export type PostMeta = {
   slug: string;
@@ -51,17 +52,12 @@ function parsePost(filename: string): Post | null {
   };
 }
 
-function getAllPosts(): PostMeta[] {
-  return fs
-    .readdirSync(POSTS_DIR)
-    .filter((f) => f.endsWith(".md"))
-    .map(parsePost)
-    .filter((p): p is Post => p !== null)
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
+export function getAllPostMeta(): PostMeta[] {
+  return postsIndex as PostMeta[];
 }
 
 export function getPaginatedPosts(page: number): { posts: PostMeta[]; totalPages: number } {
-  const all = getAllPosts();
+  const all = getAllPostMeta();
   const totalPages = Math.ceil(all.length / PER_PAGE);
   const posts = all.slice((page - 1) * PER_PAGE, page * PER_PAGE);
   return { posts, totalPages };
@@ -83,4 +79,3 @@ export function getAllSlugs(): string[] {
     .map((p) => p.slug);
 }
 
-export { PER_PAGE };

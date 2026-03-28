@@ -22,7 +22,7 @@ export function MobileNav() {
       </Button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-[57px] border-b border-border bg-background px-6 py-4 flex flex-col gap-1">
+        <div className="absolute left-0 right-0 top-[57px] z-10 border-b border-border bg-background px-6 py-4 flex flex-col gap-1">
           {navLinks.map(({ href, label }) => (
             <Button key={href} variant="ghost" size="sm" asChild className="justify-start">
               <Link href={href} onClick={() => setOpen(false)}>{label}</Link>
