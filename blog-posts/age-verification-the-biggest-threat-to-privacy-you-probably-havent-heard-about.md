@@ -40,7 +40,7 @@ There are genuine harms worth protecting children from online. But a problem tha
 
 ### Device Level Protection
 
-Screen Time and Android Family Link already exist. The difference is that these are parent opt-in rather than government-mandated. Some may be quick to point out the various ways children have workaround to those protections. Those same loopholes are still present in the government-mandated solutions. But this strategy keeps it up to the user's discretion.
+Screen Time and Android Family Link already exist. The difference is that these are parent opt-in rather than government-mandated. Some may be quick to point out the various ways children have found workarounds to those protections. Those same loopholes are still present in the government-mandated solutions. But this strategy keeps it up to the user's discretion.
 
 ### Education
 
