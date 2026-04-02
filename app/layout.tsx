@@ -8,6 +8,7 @@ import { MobileNav } from "@/components/mobile-nav";
 import { Airplane } from "@/components/airplane";
 import { Button } from "@/components/ui/button";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/next';
 import Link from "next/link";
 
 const merriweather = Merriweather({subsets:['latin'],variable:'--font-serif'});
@@ -85,6 +86,8 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-serif", merriweather.variable)}
       suppressHydrationWarning
     >
+
+      <Analytics />
       <SpeedInsights />
       <body className="min-h-full flex flex-col">
         <script
