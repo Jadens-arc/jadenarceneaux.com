@@ -4,7 +4,7 @@ date = 2026-03-24T07:04:49-07:00
 draft = false
 +++
 
-Protecting kids online matters, but how we do it matters just as much. California's [Assembly Bill No. 1043](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) and Colorado's [Senate Bill 26-051](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) both aim to solve this problem through a similar solution. Instead of requiring individual apps to verify user age as is so common internationally in countries like the Philippines, both bills shift the responsibility to operating system providers. To quote the California bill, operating system providers must now "provide an accessible interface at account setup that requires an account holder, as defined, to indicate the birth date, age, or both, of the user of that device." This age information must then be exposed to developers. The legislation refers to this as "providing a signal" regarding the users' age to applications, but as far as I can tell this just seems like an age API that developers can reference. Both go into effect on January 1, 2027.
+Protecting kids online matters, but how we do it matters just as much. California's [Assembly Bill No. 1043](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) and Colorado's [Senate Bill 26-051](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB1043) both aim to solve this problem through a similar solution. Instead of requiring individual apps to verify user age, as is so common internationally in countries like the Philippines, both bills shift the responsibility to operating system providers. To quote the California bill, operating system providers must now "provide an accessible interface at account setup that requires an account holder, as defined, to indicate the birth date, age, or both, of the user of that device." This age information must then be exposed to developers. The legislation refers to this as "providing a signal" regarding users' age to applications, but as far as I can tell this just seems like an age API that developers can reference. Both go into effect on January 1, 2027.
 
 ## Concerns
 
@@ -13,18 +13,18 @@ This raises some important concerns worth considering. The first and most obviou
 
 ### Linux?
 
-These bills target "operating system providers" but who is the provider of open source operating systems, like most Linux distributions? Commercial Linux distributions backed by a company like Red Hat Enterprise Linux and Ubuntu are likely to be forced into compliance, but this puts community made operating systems in a gray area. Especially since, unlike MacOS and Windows, most Linux distributions do not have centralized account systems. They typically have Users and Groups to dictate file permissions, but nothing similar to a Microsoft or iCloud account.
+These bills target "operating system providers", but who is the provider of open-source operating systems, like most Linux distributions? Commercial Linux distributions backed by a company, like Red Hat Enterprise Linux and Ubuntu, are likely to be forced into compliance, but this puts community-made operating systems in a gray area. Especially since, unlike MacOS and Windows, most Linux distributions do not have centralized account systems. They typically have users and groups to dictate file permissions, but nothing similar to a Microsoft or iCloud account.
 
 ### Virtual Machines?
 
-There's no mention of virtual machines in this legislation. It seems to be worded such that the host machine is responsible for collecting and reporting age information. What happens inside of virtual machines isn't regulated and should someone use a VM to circumvent age protections there is nothing stated to prevent that.
+There's no mention of virtual machines in this legislation. It seems to be worded such that the host machine is responsible for collecting and reporting age information. What happens inside virtual machines isn't regulated, and should someone use a VM to circumvent age protections, there is nothing stated to prevent that.
 
-To be clear, servers **are** directly excluded from this set of rules. In the California bill "users" are defined as "a child that is the primary user of the device", which a server generally wouldn't be. However, as someone who was running linux virtual machines at the ripe age of 13 that feels a little flimsy.
+To be clear, servers **are** directly excluded from this set of rules. In the California bill, "users" are defined as "a child that is the primary user of the device," which a server generally wouldn't be. However, as someone who was running Linux virtual machines at the ripe age of 13 that feels a little flimsy.
 
 
-## Fears for the future
+## Fears for the Future
 
-Behind all of this is the looming cloud of increasing government surveillance on our devices. Nowhere is this more apparent than [Senate Bill S8102A](https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A) in New York. This hasn't made it to the Senate floor yet, but if passed, it would require thorough age verification, not just age reporting. The bills from California and Colorado make no mention of verifying age data self-reported by users, only that it must be requested and shared. In contrast, the New York bill requires "age assurance at the point of device activation," meaning operating system providers must, to the best of their ability, validate the age that users that input. It doesn't mandate a single technology, but it does reference zero-knowledge proof methods and device-based digital wallets. 
+Behind all of this is the looming cloud of increasing government surveillance on our devices. Nowhere is this more apparent than [Senate Bill S8102A](https://www.nysenate.gov/legislation/bills/2025/S8102/amendment/A) in New York. This hasn't made it to the Senate floor yet, but if passed, it would require thorough age verification, not just age reporting. The bills from California and Colorado make no mention of verifying age data self-reported by users, only that it must be requested and shared. In contrast, the New York bill requires "age assurance at the point of device activation," meaning operating system providers must, to the best of their ability, validate the age users input. It doesn't mandate a single technology, but it does reference zero-knowledge proof methods and device-based digital wallets. 
 
 ### The Slope 
 
