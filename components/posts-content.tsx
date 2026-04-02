@@ -101,7 +101,7 @@ export function PostsContent({ allPosts }: Props) {
                   })}
                 </span>
               </div>
-              <p className="mt-2 text-sm text-muted-foreground leading-7">{summary}</p>
+              <p className="mt-2 text-sm text-muted-foreground leading-7 break-words">{summary}</p>
               {tags.length > 0 && (
                 <div className="mt-2 flex flex-wrap gap-2">
                   {tags.map((tag) => (
