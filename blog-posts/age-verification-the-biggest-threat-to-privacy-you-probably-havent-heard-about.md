@@ -44,6 +44,6 @@ Screen Time and Android Family Link already exist. The difference is that these 
 
 ### Education
 
-This is the cold hard truth. We can't protect kids from everything, not least of all their own curiosity. They will figure out workarounds to any barriers we put in front of them.
+This is the cold hard truth. We can't protect kids from everything, not least of all their own curiosity. They will figure out workarounds for any barriers we put in front of them.
 
 Parents need to be educated about what tools currently exist to protect their kids. Most importantly, children need to be educated about what's out there and why they should avoid it. Fundamentally, we all need to be educated about manipulation, misinformation, unhealthy comparison, oversharing, and addiction. Turning 18 doesn't make you immune to that. Digital literacy isn't just an assembly about cyberbullying. It could be teaching kids about targeted advertising, manipulative design patterns (infinite scroll, engagement bait, etc), evaluating sources, and managing their privacy. Yes, this does include some potentially uncomfortable conversations, but that comes with the territory.
