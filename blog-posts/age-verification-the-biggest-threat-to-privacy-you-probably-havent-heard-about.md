@@ -17,7 +17,7 @@ These bills target "operating system providers," but who is the provider of open
 
 ### Virtual Machines?
 
-There's no mention of virtual machines in this legislation. It seems to be worded such that the host machine is responsible for collecting and reporting age information. What happens inside virtual machines isn't regulated, and should someone use a VM to circumvent age protections? There is nothing stated to prevent that.
+There's no mention of virtual machines in this legislation. It seems to be worded such that the host machine is responsible for collecting and reporting age information. What happens inside virtual machines isn't regulated, and should someone use a VM to circumvent age protections, there is nothing stated to prevent that.
 
 To be clear, servers **are** directly excluded from this set of rules. In the California bill, "users" are defined as "a child that is the primary user of the device," which a server generally wouldn't be. However, as someone who was running Linux virtual machines at the ripe age of 13, that feels a little flimsy.
 
