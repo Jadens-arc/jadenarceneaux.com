@@ -38,6 +38,13 @@ export const metadata: Metadata = {
     siteName: "Jaden Arceneaux",
     title: "Jaden Arceneaux",
     description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+    images: [{ url: "/social card.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jaden Arceneaux",
+    description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+    images: ["/social card.png"],
   },
   alternates: {
     canonical: BASE_URL,
