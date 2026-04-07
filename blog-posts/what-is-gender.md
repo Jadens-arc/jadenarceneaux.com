@@ -18,7 +18,7 @@ You probably visualized something like this...
 
 *insert car image* 
 
-That's crazy. But what you're actually looking at is about 30,000 metal and plastic parts coming together to make up what something we'd identify as a car. That's a big deal. There's a psychology term meant to describe this effect. A [Gestalt](https://en.wikipedia.org/wiki/Gestalt_psychology#:~:text=Gestalt%20psychology%2C%20gestaltism%2C%20or%20configurationism,pattern%22%20or%20%22configuration%22.) is defined as a "form," "shape," or "configuration," referring to a philosophy where an organized whole is perceived as more than, or different from, the mere sum of its parts. When you look at a car this way it becomes less of a singular object and more of an idea.
+What you're actually looking at is about 30,000 metal and plastic parts coming together to make up what something we'd identify as a car. That's a big deal. There's a psychology term meant to describe this effect. A [Gestalt](https://en.wikipedia.org/wiki/Gestalt_psychology#:~:text=Gestalt%20psychology%2C%20gestaltism%2C%20or%20configurationism,pattern%22%20or%20%22configuration%22.) is defined as a "form," "shape," or "configuration," where an organized whole is perceived as more than, or different from, the mere sum of its parts. When you look at a car this way it becomes less of a singular object and more of an idea.
 
 > If you're wondering why I know that, it's because I like studying fashion and art and it's a... I'm not going to say "big deal", you can enjoy art without knowing that, but a lot of designers take that concept and distinction seriously.
 
