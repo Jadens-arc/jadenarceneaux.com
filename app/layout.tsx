@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { MobileNav } from "@/components/mobile-nav";
-import { Airplane } from "@/components/airplane";
 import { Button } from "@/components/ui/button";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/next';
@@ -102,7 +101,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ThemeProvider>
-          <Airplane />
           <header className="relative border-b border-border">
             <nav className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
               <Link href="/" className="font-heading text-lg font-semibold tracking-tight">
