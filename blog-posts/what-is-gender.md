@@ -22,7 +22,7 @@ What you're actually looking at is about 30,000 metal and plastic parts coming t
 
 > If you're wondering why I know that, it's because I like studying fashion and art and it's a... I'm not going to say "big deal", you can enjoy art without knowing that, but a lot of designers take that concept and distinction seriously.
 
-## How does this relate to Gender?
+## The Connection
 
 I think gender identities function in almost the exact same way. They are ideas amalgam from a ton of ideas, characteristics, and influences.
 
@@ -30,6 +30,10 @@ At the physiological level you have things like genital and chromosomal sex, and
 
 When you look at gender in this way it becomes less of two binary categories and more of a spectrum. Just to be clear these are just the attributes I can think of off the top of my head, I'm sure there are entire levels of this I'm not seeing. Also I don't believe there's inherently a hierarchy to these attributes. One isn't more important than another, it really comes down to the individual and what they hope to achieve with their identity. Likewise, thinking of gender identity as a list of checkboxes to fill is reductive and disingenuous to the self. No one can really condense something that complex to a concrete list of items.
 
+
+## Why it Matters
+
+Even if you don't identify as non binary or gender fluid, this is still relevant. Viewing gender this way is more representative of how we actually live in the real world.
 
 
 
