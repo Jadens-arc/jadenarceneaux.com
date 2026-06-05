@@ -28,16 +28,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: "Jaden Arceneaux",
   description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
-  robots: {
-    index: false,
-    follow: false,
-    nocache: true,
-    googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
-    },
-  },
   icons: {
     apple: "/icon.png",
   },
