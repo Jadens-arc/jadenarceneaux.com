@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${BASE_URL}/projects`,
+      url: `${BASE_URL}/portfolio`,
       changeFrequency: "monthly",
       priority: 0.9,
     },

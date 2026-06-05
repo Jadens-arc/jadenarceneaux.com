@@ -39,19 +39,6 @@ const projects = [
     tags: ["PHP", "Symfony", "Linux", "Infrastructure", "Integrations"],
   },
   {
-    name: "jadenarceneaux.com",
-    period: "2023-present",
-    type: "Personal site and technical blog",
-    href: "https://github.com/jadens-arc/jadenarceneaux.com",
-    description:
-      "This website: a fast, typed, open-source personal site for writing, project notes, and contact.",
-    details: [
-      "Built with the Next.js App Router, React, TypeScript, Tailwind, and shadcn-style UI primitives.",
-      "Includes markdown blog publishing, search, responsive navigation, analytics, and a contact flow.",
-    ],
-    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
-  },
-  {
     name: "Ironmind",
     period: "2024",
     type: "Rust interpreter and visualizer",
@@ -63,19 +50,6 @@ const projects = [
       "Distributed through crates.io, Snap, and Homebrew, with existing project copy noting 40,000+ downloads.",
     ],
     tags: ["Rust", "CLI", "crates.io", "Snap", "Homebrew"],
-  },
-  {
-    name: "Opium.press",
-    period: "2022-2023",
-    type: "Writing platform",
-    href: "https://github.com/jadens-arc/opium.press",
-    description:
-      "A Symfony/PHP platform for writers to publish ideas and opinions, built as an early full-stack product after high school.",
-    details: [
-      "Designed core publishing flows, account behavior, and platform structure.",
-      "Deployed with cloud infrastructure and used as a hands-on product engineering project.",
-    ],
-    tags: ["PHP", "Symfony", "Google Cloud"],
   },
   {
     name: "Foothill Grill",
@@ -101,14 +75,26 @@ const projects = [
     ],
     tags: ["Square", "Mobile web", "Small business"],
   },
+  {
+    name: "jadenarceneaux.com",
+    period: "2023-present",
+    type: "Personal site and technical blog",
+    href: "https://github.com/jadens-arc/jadenarceneaux.com",
+    description:
+      "This website: a fast, typed, open-source personal site for writing, project notes, and contact.",
+    details: [
+      "Built with the Next.js App Router, React, TypeScript, Tailwind, and shadcn-style UI primitives.",
+      "Includes markdown blog publishing, search, responsive navigation, analytics, and a contact flow.",
+    ],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
+  },
 ];
 
-export default function Projects() {
+export default function Portfolio() {
   return (
     <motion.div variants={animation_container} initial="hidden" animate="show">
       <motion.section variants={animation_item}>
-        <p className="text-sm font-medium text-muted-foreground">Portfolio</p>
-        <h1 className="mt-3 font-heading text-4xl font-bold tracking-tight sm:text-5xl">
+        <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">
           Software that makes real work easier.
         </h1>
         <p className="mt-6 max-w-2xl leading-relaxed text-muted-foreground">
