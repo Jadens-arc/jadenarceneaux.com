@@ -48,7 +48,7 @@ export function HomeContent() {
       </motion.h1>
 
       {greeting && (
-        <motion.p variants={animation_item} className="mt-8 text-sm text-muted-foreground">
+        <motion.p variants={animation_item} data-nosnippet className="mt-8 text-sm text-muted-foreground">
           {greeting}
         </motion.p>
       )}
