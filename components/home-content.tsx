@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Music, Key } from "lucide-react";
+import { Mail, Music } from "lucide-react";
 import { IconGithub, IconInstagram, IconLinkedin } from "@/lib/icons";
 import { motion } from "motion/react";
 import { animation_container, animation_item } from "@/lib/animation";
@@ -11,7 +11,6 @@ import { animation_container, animation_item } from "@/lib/animation";
 
 const socialLinks = [
   { href: "mailto:contact@jadenarceneaux.com", label: "Email", icon: Mail, external: false },
-  { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false },
   { href: "https://github.com/jadens-arc", label: "GitHub", icon: IconGithub, external: true },
   { href: "https://www.linkedin.com/in/jaden-arceneaux/", label: "LinkedIn", icon: IconLinkedin, external: true },
   { href: "https://www.instagram.com/jaden.svg/", label: "Instagram", icon: IconInstagram, external: true },

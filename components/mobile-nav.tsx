@@ -9,7 +9,6 @@ const navLinks = [
   { href: "/portfolio", label: "Portfolio" },
   { href: "/posts", label: "Blog" },
   { href: "/contact", label: "Contact" },
-  { href: "/misc", label: "Misc" },
 ];
 
 export function MobileNav() {
