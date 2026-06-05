@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSyncExternalStore } from "react";
 import { Button } from "@/components/ui/button";
 import { Mail, Music, Key } from "lucide-react";
 import { IconGithub, IconInstagram, IconLinkedin } from "@/lib/icons";
@@ -17,7 +18,27 @@ const socialLinks = [
   { href: "https://open.spotify.com/artist/37FSUfROYvcy3tgQAWHOo9", label: "Spotify", icon: Music, external: true },
 ];
 
-export function HomeContent({ greeting }: { greeting: string | null }) {
+function getSeasonalGreeting(date = new Date()): string | null {
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+
+  if (month === 11 && day === 2) return "Happy Jaden Day 🎆";
+  if (month === 12 && day === 25) return "Merry Christmas ❄️⛄️";
+  if (month === 2) return "Happy Black History Month ✊🏾";
+  if (month === 3) return "Happy Women's History Month 💜";
+  if (month === 6) return "Happy Pride Month 🏳️‍🌈";
+  if (month === 10) return "Happy Las Vegas Pride 🏳️‍🌈";
+  return null;
+}
+
+function subscribeToTimeChange(callback: () => void) {
+  const interval = window.setInterval(callback, 60_000);
+  return () => window.clearInterval(interval);
+}
+
+export function HomeContent() {
+  const greeting = useSyncExternalStore(subscribeToTimeChange, getSeasonalGreeting, () => null);
+
   return (
     <motion.div variants={animation_container} initial="hidden" animate="show">
       <motion.h1
