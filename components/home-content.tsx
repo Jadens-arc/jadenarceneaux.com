@@ -39,8 +39,8 @@ export function HomeContent({ greeting }: { greeting: string | null }) {
 
       <motion.p variants={animation_item} className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
         Feel free to explore my{" "}
-        <Link href="/projects" className="underline underline-offset-4 hover:text-foreground transition-colors">
-          projects
+        <Link href="/portfolio" className="underline underline-offset-4 hover:text-foreground transition-colors">
+          portfolio
         </Link>{" "}
         and{" "}
         <Link href="/posts" className="underline underline-offset-4 hover:text-foreground transition-colors">
