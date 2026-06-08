@@ -29,7 +29,7 @@ const projects = [
     type: "Professional software engineering",
     href: "https://isp.net",
     description:
-      "Production engineering work for a local internet service provider, focused on practical internal systems that help sales, operations, HR, billing, and support teams move faster.",
+      "Senior software engineer for a local internet service provider, focused on practical internal systems that help sales, operations, HR, billing, and support teams move faster.",
     details: [
       "Worked on CRM, lead management, HRIS, access control, billing, and other internal tools.",
       "Modernized legacy PHP/Symfony code while maintaining active business workflows.",
@@ -52,8 +52,9 @@ const projects = [
     tags: ["Rust", "CLI", "crates.io", "Snap", "Homebrew"],
   },
   {
-    name: "Foothill Grill",
+    name: "Family Affair Grill",
     period: "Small-business client work",
+    href: "https://familyaffairgrill.com",
     type: "Restaurant web and ordering setup",
     description:
       "A practical web presence and Square ordering setup for a bar kitchen/restaurant, focused on making the menu easier to find and orders easier to manage.",
