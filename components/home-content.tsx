@@ -41,10 +41,6 @@ export function HomeContent({ greeting }: { greeting: string | null }) {
         Feel free to explore my{" "}
         <Link href="/projects" className="underline underline-offset-4 hover:text-foreground transition-colors">
           projects
-        </Link>{" "}
-        and{" "}
-        <Link href="/posts" className="underline underline-offset-4 hover:text-foreground transition-colors">
-          blog
         </Link>
         .
       </motion.p>

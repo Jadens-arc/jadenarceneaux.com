@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        // Blog retired — /posts and every post URL now land on projects
+        source: '/posts/:slug*',
+        destination: '/projects',
+        permanent: true,
+      },
     ]
   },
 };
