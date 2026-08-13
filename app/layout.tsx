@@ -66,8 +66,7 @@ const jsonLd = {
       "name": "Main Navigation",
       "itemListElement": [
         { "@type": "SiteNavigationElement", "position": 1, "name": "Portfolio", "url": `${BASE_URL}/portfolio` },
-        { "@type": "SiteNavigationElement", "position": 2, "name": "Blog", "url": `${BASE_URL}/posts` },
-        { "@type": "SiteNavigationElement", "position": 3, "name": "Contact", "url": `${BASE_URL}/contact` },
+        { "@type": "SiteNavigationElement", "position": 2, "name": "Contact", "url": `${BASE_URL}/contact` },
       ],
     },
   ],
@@ -75,7 +74,6 @@ const jsonLd = {
 
 const navLinks = [
   { href: "/portfolio", label: "Portfolio" },
-  { href: "/posts", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -61,10 +61,6 @@ export function HomeContent() {
         Feel free to explore my{" "}
         <Link href="/portfolio" className="underline underline-offset-4 hover:text-foreground transition-colors">
           portfolio
-        </Link>{" "}
-        and{" "}
-        <Link href="/posts" className="underline underline-offset-4 hover:text-foreground transition-colors">
-          blog
         </Link>
         .
       </motion.p>
