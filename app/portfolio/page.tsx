@@ -52,19 +52,6 @@ const projects = [
     tags: ["Rust", "CLI", "crates.io", "Snap", "Homebrew"],
   },
   {
-    name: "Family Affair Grill",
-    period: "Small-business client work",
-    href: "https://familyaffairgrill.com",
-    type: "Restaurant web and ordering setup",
-    description:
-      "A practical web presence and Square ordering setup for a bar kitchen/restaurant, focused on making the menu easier to find and orders easier to manage.",
-    details: [
-      "Set up online ordering around the business's existing operations.",
-      "Kept the implementation simple enough for staff to maintain without technical overhead.",
-    ],
-    tags: ["Square", "Small business", "Web setup"],
-  },
-  {
     name: "Tres Tacos",
     period: "Small-business client work",
     type: "Taco truck web and ordering setup",
