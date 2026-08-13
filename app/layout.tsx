@@ -27,7 +27,7 @@ const BASE_URL = "https://jadenarceneaux.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: "Jaden Arceneaux",
-  description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+  description: "Software engineer, music enthusiast, and dedicated vim keybind user based in beautiful Las Vegas, Nevada🌵",
   icons: {
     apple: "/icon.png",
   },
@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     url: BASE_URL,
     siteName: "Jaden Arceneaux",
     title: "Jaden Arceneaux",
-    description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+    description: "Software engineer, music enthusiast, and dedicated vim keybind user based in beautiful Las Vegas, Nevada🌵",
     images: [{ url: "/social card.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jaden Arceneaux",
-    description: "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+    description: "Software engineer, music enthusiast, and dedicated vim keybind user based in beautiful Las Vegas, Nevada🌵",
     images: ["/social card.png"],
   },
   alternates: {
@@ -58,7 +58,7 @@ const jsonLd = {
       "@id": `${BASE_URL}/#website`,
       "url": `${BASE_URL}/`,
       "name": "Jaden Arceneaux",
-      "description": "Full Stack Developer specializing in scalable applications, automation, and business process optimization.",
+      "description": "Software engineer, music enthusiast, and dedicated vim keybind user based in beautiful Las Vegas, Nevada🌵",
       "inLanguage": "en",
     },
     {

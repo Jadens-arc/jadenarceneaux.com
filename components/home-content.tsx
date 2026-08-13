@@ -53,7 +53,7 @@ export function HomeContent() {
       )}
 
       <motion.p variants={animation_item} className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-        Software engineer, occasional writer, and dedicated Neovim user based in beautiful Las Vegas, Nevada🌵
+        Software engineer, music enthusiast, and dedicated vim keybind user based in beautiful Las Vegas, Nevada🌵
       </motion.p>
 
       <motion.p variants={animation_item} className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
