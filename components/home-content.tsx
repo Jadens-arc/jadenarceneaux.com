@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useSyncExternalStore } from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Music, Key } from "lucide-react";
+import { Mail, Music } from "lucide-react";
 import { IconGithub, IconInstagram, IconLinkedin } from "@/lib/icons";
 import { motion } from "motion/react";
 import { animation_container, animation_item } from "@/lib/animation";
@@ -10,14 +11,33 @@ import { animation_container, animation_item } from "@/lib/animation";
 
 const socialLinks = [
   { href: "mailto:contact@jadenarceneaux.com", label: "Email", icon: Mail, external: false },
-  { href: "/misc#pgp-key", label: "PGP Key", icon: Key, external: false },
   { href: "https://github.com/jadens-arc", label: "GitHub", icon: IconGithub, external: true },
   { href: "https://www.linkedin.com/in/jaden-arceneaux/", label: "LinkedIn", icon: IconLinkedin, external: true },
   { href: "https://www.instagram.com/jaden.svg/", label: "Instagram", icon: IconInstagram, external: true },
   { href: "https://open.spotify.com/artist/37FSUfROYvcy3tgQAWHOo9", label: "Spotify", icon: Music, external: true },
 ];
 
-export function HomeContent({ greeting }: { greeting: string | null }) {
+function getSeasonalGreeting(date = new Date()): string | null {
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+
+  if (month === 11 && day === 2) return "Happy Jaden Day 🎆";
+  if (month === 12 && day === 25) return "Merry Christmas ❄️⛄️";
+  if (month === 2) return "Happy Black History Month ✊🏾";
+  if (month === 3) return "Happy Women's History Month 💜";
+  if (month === 6) return "Happy Pride Month 🏳️‍🌈";
+  if (month === 10) return "Happy Las Vegas Pride 🏳️‍🌈";
+  return null;
+}
+
+function subscribeToTimeChange(callback: () => void) {
+  const interval = window.setInterval(callback, 60_000);
+  return () => window.clearInterval(interval);
+}
+
+export function HomeContent() {
+  const greeting = useSyncExternalStore(subscribeToTimeChange, getSeasonalGreeting, () => null);
+
   return (
     <motion.div variants={animation_container} initial="hidden" animate="show">
       <motion.h1
@@ -28,7 +48,7 @@ export function HomeContent({ greeting }: { greeting: string | null }) {
       </motion.h1>
 
       {greeting && (
-        <motion.p variants={animation_item} className="mt-8 text-sm text-muted-foreground">
+        <motion.p variants={animation_item} data-nosnippet className="mt-8 text-sm text-muted-foreground">
           {greeting}
         </motion.p>
       )}
@@ -39,8 +59,8 @@ export function HomeContent({ greeting }: { greeting: string | null }) {
 
       <motion.p variants={animation_item} className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
         Feel free to explore my{" "}
-        <Link href="/projects" className="underline underline-offset-4 hover:text-foreground transition-colors">
-          projects
+        <Link href="/portfolio" className="underline underline-offset-4 hover:text-foreground transition-colors">
+          portfolio
         </Link>
         .
       </motion.p>
