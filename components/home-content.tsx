@@ -82,7 +82,6 @@ export function HomeContent() {
             Born and raised in Las Vegas. I taught myself to code at 13 and never really stopped.
             These days I build production software, ERPs, CRMs, and whatever else makes people&apos;s work lives easier.
             I&apos;ve been a professional software engineer for over 4 years.
-            Outside of that I also make music as a hobby and you can find that on my Spotify.
           </motion.p>
           <motion.p variants={animation_item} className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
             This website is one of my favorite projects and it&apos;s open source. Check out the code on{" "}
