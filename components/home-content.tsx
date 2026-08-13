@@ -84,6 +84,12 @@ export function HomeContent() {
             I&apos;ve been a professional software engineer for over 4 years.
           </motion.p>
           <motion.p variants={animation_item} className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
+            Away from the keyboard I&apos;m a serious music enthusiast. I love synths and grooveboxes.
+            An MPC Sample does most of the heavy lifting, and an Arturia MicroFreak is on the way to join it.
+            I gravitate toward hip-hop, trap, and electronic music, and I&apos;ve spent free time working
+            music festivals.
+          </motion.p>
+          <motion.p variants={animation_item} className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
             This website is one of my favorite projects and it&apos;s open source. Check out the code on{" "}
             <a href="https://github.com/jadens-arc/jadenarceneaux.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
               GitHub
