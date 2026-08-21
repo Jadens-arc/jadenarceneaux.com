@@ -53,6 +53,14 @@ export default function Links() {
             Wheel #6
           </a>
         </li>
+        <li>
+          <a
+            className="underline underline-offset-4 hover:text-foreground transition-colors"
+            href="https://wheelofnames.com/mzv-f9v"
+          >
+            Wheel #7
+          </a>
+        </li>
       </ul>
     </div>
   );
