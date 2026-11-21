@@ -22,12 +22,6 @@ const nextConfig: NextConfig = {
         destination: '/portfolio',
         permanent: true,
       },
-      {
-        // Blog retired — /posts and every post URL now land on the portfolio
-        source: '/posts/:slug*',
-        destination: '/portfolio',
-        permanent: true,
-      },
     ]
   },
 };

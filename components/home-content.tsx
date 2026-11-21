@@ -60,6 +60,10 @@ export function HomeContent() {
         Feel free to explore my{" "}
         <Link href="/portfolio" className="underline underline-offset-4 hover:text-foreground transition-colors">
           portfolio
+        </Link>{" "}
+        and{" "}
+        <Link href="/posts" className="underline underline-offset-4 hover:text-foreground transition-colors">
+          blog
         </Link>
         .
       </motion.p>
@@ -88,13 +92,6 @@ export function HomeContent() {
             An MPC Sample does most of the heavy lifting, and an Arturia MicroFreak is on the way to join it.
             I gravitate toward hip-hop, trap, and electronic music, and I&apos;ve spent free time working
             music festivals.
-          </motion.p>
-          <motion.p variants={animation_item} className="mt-6 max-w-xl leading-relaxed text-muted-foreground">
-            This website is one of my favorite projects and it&apos;s open source. Check out the code on{" "}
-            <a href="https://github.com/jadens-arc/jadenarceneaux.com" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
-              GitHub
-            </a>
-            .
           </motion.p>
         </div>
       </motion.div>
