@@ -66,13 +66,13 @@ const projects = [
   {
     name: "jadenarceneaux.com",
     period: "2023-present",
-    type: "Personal site and portfolio",
+    type: "Personal site and technical blog",
     href: "https://github.com/jadens-arc/jadenarceneaux.com",
     description:
-      "This website: a fast, typed, open-source personal site for project work and contact.",
+      "This website: a fast, typed, open-source personal site for writing, project notes, and contact.",
     details: [
       "Built with the Next.js App Router, React, TypeScript, Tailwind, and shadcn-style UI primitives.",
-      "Includes responsive navigation, light/dark theming, analytics, and a spam-protected contact flow.",
+      "Includes markdown blog publishing, search, responsive navigation, analytics, and a contact flow.",
     ],
     tags: ["Next.js", "React", "TypeScript", "Tailwind", "Vercel"],
   },
